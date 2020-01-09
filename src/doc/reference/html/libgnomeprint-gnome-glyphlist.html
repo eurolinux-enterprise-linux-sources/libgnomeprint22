@@ -1,0 +1,793 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gnome-glyphlist</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.2">
+<link rel="home" href="index.html" title="GNOME Print Reference Manual">
+<link rel="up" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+<link rel="prev" href="libgnomeprint-gnome-font.html" title="gnome-font">
+<link rel="next" href="libgnomeprint-gnome-pgl.html" title="gnome-pgl">
+<meta name="generator" content="GTK-Doc V1.11 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="part" href="libgnomeprint.html" title="Part I. GNOME Print Overview">
+<link rel="part" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libgnomeprint-gnome-font.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libgnomeprintunsorted.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GNOME Print Reference Manual</th>
+<td><a accesskey="n" href="libgnomeprint-gnome-pgl.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libgnomeprint-gnome-glyphlist.synopsis" class="shortcut">Top</a>
+                 | 
+                <a href="#libgnomeprint-gnome-glyphlist.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="libgnomeprint-gnome-glyphlist"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgnomeprint-gnome-glyphlist.top_of_page"></a>gnome-glyphlist</span></h2>
+<p>gnome-glyphlist</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libgnomeprint-gnome-glyphlist.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+                    <a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a>;
+<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-new" title="gnome_glyphlist_new ()">gnome_glyphlist_new</a>                 (void);
+<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-ref" title="gnome_glyphlist_ref ()">gnome_glyphlist_ref</a>                 (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl);
+<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-unref" title="gnome_glyphlist_unref ()">gnome_glyphlist_unref</a>               (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl);
+<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-duplicate" title="gnome_glyphlist_duplicate ()">gnome_glyphlist_duplicate</a>           (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl);
+<a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-check" title="gnome_glyphlist_check ()">gnome_glyphlist_check</a>               (const <a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> rules);
+<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-from-text-dumb" title="gnome_glyphlist_from_text_dumb ()">gnome_glyphlist_from_text_dumb</a>      (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#guint32"
+>guint32</a> color,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> kerning,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> letterspace,
+                                                         const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *text);
+<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-from-text-sized-dumb" title="gnome_glyphlist_from_text_sized_dumb ()">gnome_glyphlist_from_text_sized_dumb</a>
+                                                        (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#guint32"
+>guint32</a> color,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> kerning,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> letterspace,
+                                                         const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *text,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> length);
+void                <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-advance" title="gnome_glyphlist_advance ()">gnome_glyphlist_advance</a>             (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> advance);
+void                <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-kerning" title="gnome_glyphlist_kerning ()">gnome_glyphlist_kerning</a>             (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> kerning);
+void                <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-letterspace" title="gnome_glyphlist_letterspace ()">gnome_glyphlist_letterspace</a>         (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> letterspace);
+void                <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-font" title="gnome_glyphlist_font ()">gnome_glyphlist_font</a>                (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+void                <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-color" title="gnome_glyphlist_color ()">gnome_glyphlist_color</a>               (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#guint32"
+>guint32</a> color);
+void                <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-moveto" title="gnome_glyphlist_moveto ()">gnome_glyphlist_moveto</a>              (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> x,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> y);
+void                <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-rmoveto" title="gnome_glyphlist_rmoveto ()">gnome_glyphlist_rmoveto</a>             (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> x,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> y);
+void                <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-glyph" title="gnome_glyphlist_glyph ()">gnome_glyphlist_glyph</a>               (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph);
+void                <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-glyphs" title="gnome_glyphlist_glyphs ()">gnome_glyphlist_glyphs</a>              (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> *glyphs,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> num_glyphs);
+void                <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-text-dumb" title="gnome_glyphlist_text_dumb ()">gnome_glyphlist_text_dumb</a>           (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *text);
+void                <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-text-sized-dumb" title="gnome_glyphlist_text_sized_dumb ()">gnome_glyphlist_text_sized_dumb</a>     (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *text,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> length);
+ArtDRect *          <a class="link" href="libgnomeprint-gnome-glyphlist.html#gnome-glyphlist-bbox" title="gnome_glyphlist_bbox ()">gnome_glyphlist_bbox</a>                (const <a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         const <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> *transform,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> flags,
+                                                         ArtDRect *bbox);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-gnome-glyphlist.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-gnome-glyphlist.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="GnomeGlyphList"></a><h3>GnomeGlyphList</h3>
+<pre class="programlisting">typedef struct _GnomeGlyphList GnomeGlyphList;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-new"></a><h3>gnome_glyphlist_new ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    gnome_glyphlist_new                 (void);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-ref"></a><h3>gnome_glyphlist_ref ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    gnome_glyphlist_ref                 (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-unref"></a><h3>gnome_glyphlist_unref ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    gnome_glyphlist_unref               (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-duplicate"></a><h3>gnome_glyphlist_duplicate ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    gnome_glyphlist_duplicate           (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-check"></a><h3>gnome_glyphlist_check ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            gnome_glyphlist_check               (const <a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> rules);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>rules</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-from-text-dumb"></a><h3>gnome_glyphlist_from_text_dumb ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    gnome_glyphlist_from_text_dumb      (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#guint32"
+>guint32</a> color,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> kerning,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> letterspace,
+                                                         const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *text);</pre>
+<p>
+See _from_text_sized_dumb</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>color</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>kerning</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>letterspace</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>text</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-from-text-sized-dumb"></a><h3>gnome_glyphlist_from_text_sized_dumb ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *    gnome_glyphlist_from_text_sized_dumb
+                                                        (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#guint32"
+>guint32</a> color,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> kerning,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> letterspace,
+                                                         const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *text,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> length);</pre>
+<p>
+Appends utf8 text, converting it to glyphs and connecting it
+as specified by rules. You cannot expect anything about
+language-specific typesetting rules, so if the given script
+does not use trivial placement, you should better avoid this</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>color</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>kerning</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>letterspace</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>text</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>length</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-advance"></a><h3>gnome_glyphlist_advance ()</h3>
+<pre class="programlisting">void                gnome_glyphlist_advance             (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> advance);</pre>
+<p>
+Whether or not to move the pen position by the font standard
+advance vector. Advancing happens immediately after glyph is
+sent through pipeline.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>advance</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-kerning"></a><h3>gnome_glyphlist_kerning ()</h3>
+<pre class="programlisting">void                gnome_glyphlist_kerning             (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> kerning);</pre>
+<p>
+Amount of kerning to add between glyphs connected by an advance
+rule. It is specified as fraction of a full kerning value 
+If a glyph is manually positioned, the kerning value is ignored
+Kerning will be added immediately before placing a new glyph
+FIXME: What does the last sentence mean? (Chema)</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>kerning</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-letterspace"></a><h3>gnome_glyphlist_letterspace ()</h3>
+<pre class="programlisting">void                gnome_glyphlist_letterspace         (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> letterspace);</pre>
+<p>
+Amount of white space to add between glyphs connected by
+an advance rule. It is specified in font units (i.e. 12 for 12pt
+font is the width of an em square). If glyph is manually positioned,
+letterspace value will be ignored. Letterspace will be added
+immediately before placing a new glyph
+FIXME: what does the last sentence mean? (Chema)</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>letterspace</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-font"></a><h3>gnome_glyphlist_font ()</h3>
+<pre class="programlisting">void                gnome_glyphlist_font                (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+Specify the font to be used for the glyphs that follow</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-color"></a><h3>gnome_glyphlist_color ()</h3>
+<pre class="programlisting">void                gnome_glyphlist_color               (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#guint32"
+>guint32</a> color);</pre>
+<p>
+Specify the color as RRGGBBAA to be used for the glyphs
+that follow</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>color</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-moveto"></a><h3>gnome_glyphlist_moveto ()</h3>
+<pre class="programlisting">void                gnome_glyphlist_moveto              (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> x,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> y);</pre>
+<p>
+Position manually the glyph following</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>y</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-rmoveto"></a><h3>gnome_glyphlist_rmoveto ()</h3>
+<pre class="programlisting">void                gnome_glyphlist_rmoveto             (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> x,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> y);</pre>
+<p>
+Position the glyph following relative to current pen position</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>y</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-glyph"></a><h3>gnome_glyphlist_glyph ()</h3>
+<pre class="programlisting">void                gnome_glyphlist_glyph               (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph);</pre>
+<p>
+Appends a single glyph to the glyphlist. It will be connected
+to the previous glyphs by the previously defined rules</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>glyph</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-glyphs"></a><h3>gnome_glyphlist_glyphs ()</h3>
+<pre class="programlisting">void                gnome_glyphlist_glyphs              (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> *glyphs,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> num_glyphs);</pre>
+<p>
+Append a string of glyphs</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>glyphs</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>num_glyphs</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-text-dumb"></a><h3>gnome_glyphlist_text_dumb ()</h3>
+<pre class="programlisting">void                gnome_glyphlist_text_dumb           (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *text);</pre>
+<p>
+See _text_sized_dumb</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>text</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-text-sized-dumb"></a><h3>gnome_glyphlist_text_sized_dumb ()</h3>
+<pre class="programlisting">void                gnome_glyphlist_text_sized_dumb     (<a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *text,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> length);</pre>
+<p>
+The 'dumb' versions of glyphlist creation
+It just places glyphs one after another - no ligaturing etc.
+text is utf8, of course</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>text</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>length</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-glyphlist-bbox"></a><h3>gnome_glyphlist_bbox ()</h3>
+<pre class="programlisting">ArtDRect *          gnome_glyphlist_bbox                (const <a class="link" href="libgnomeprint-gnome-glyphlist.html#GnomeGlyphList" title="GnomeGlyphList">GnomeGlyphList</a> *gl,
+                                                         const <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> *transform,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> flags,
+                                                         ArtDRect *bbox);</pre>
+<p>
+Get ink dimensions of transformed glyphlist
+Flags are to specify user preferences, should be 0 for now</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gl</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>transform</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>flags</code></em> :</span></p></td>
+<td> should be 0 for now
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>bbox</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> bbox, NULL on error
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.11</div>
+</body>
+</html>

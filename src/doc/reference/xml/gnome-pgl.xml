@@ -1,0 +1,209 @@
+<refentry id="libgnomeprint-gnome-pgl">
+<refmeta>
+<refentrytitle role="top_of_page" id="libgnomeprint-gnome-pgl.top_of_page">gnome-pgl</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGNOMEPRINT Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>gnome-pgl</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="libgnomeprint-gnome-pgl.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+                    <link linkend="GnomePosGlyphList">GnomePosGlyphList</link>;
+<link linkend="GnomePosGlyphList">GnomePosGlyphList</link> * <link linkend="gnome-pgl-from-gl">gnome_pgl_from_gl</link>                   (const <link linkend="GnomeGlyphList">GnomeGlyphList</link> *gl,
+                                                         const <link linkend="gdouble">gdouble</link> *transform,
+                                                         <link linkend="guint">guint</link> flags);
+<link linkend="void">void</link>                <link linkend="gnome-pgl-destroy">gnome_pgl_destroy</link>                   (<link linkend="GnomePosGlyphList">GnomePosGlyphList</link> *pgl);
+<link linkend="ArtDRect">ArtDRect</link> *          <link linkend="gnome-pgl-bbox">gnome_pgl_bbox</link>                      (const <link linkend="GnomePosGlyphList">GnomePosGlyphList</link> *pgl,
+                                                         <link linkend="ArtDRect">ArtDRect</link> *bbox);
+<link linkend="gboolean">gboolean</link>            <link linkend="gnome-pgl-test-point">gnome_pgl_test_point</link>                (const <link linkend="GnomePosGlyphList">GnomePosGlyphList</link> *pgl,
+                                                         <link linkend="gdouble">gdouble</link> x,
+                                                         <link linkend="gdouble">gdouble</link> y);
+<link linkend="void">void</link>                <link linkend="gnome-pgl-render-rgba8">gnome_pgl_render_rgba8</link>              (const <link linkend="GnomePosGlyphList">GnomePosGlyphList</link> *pgl,
+                                                         <link linkend="gdouble">gdouble</link> x,
+                                                         <link linkend="gdouble">gdouble</link> y,
+                                                         <link linkend="guchar">guchar</link> *buf,
+                                                         <link linkend="gint">gint</link> width,
+                                                         <link linkend="gint">gint</link> height,
+                                                         <link linkend="gint">gint</link> rowstride,
+                                                         <link linkend="guint">guint</link> flags);
+<link linkend="void">void</link>                <link linkend="gnome-pgl-render-rgb8">gnome_pgl_render_rgb8</link>               (const <link linkend="GnomePosGlyphList">GnomePosGlyphList</link> *pgl,
+                                                         <link linkend="gdouble">gdouble</link> x,
+                                                         <link linkend="gdouble">gdouble</link> y,
+                                                         <link linkend="guchar">guchar</link> *buf,
+                                                         <link linkend="gint">gint</link> width,
+                                                         <link linkend="gint">gint</link> height,
+                                                         <link linkend="gint">gint</link> rowstride,
+                                                         <link linkend="guint">guint</link> flags);
+</synopsis>
+</refsynopsisdiv>
+
+
+
+
+
+
+
+
+
+<refsect1 id="libgnomeprint-gnome-pgl.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+</para>
+</refsect1>
+
+<refsect1 id="libgnomeprint-gnome-pgl.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="GnomePosGlyphList" role="struct">
+<title>GnomePosGlyphList</title>
+<indexterm zone="GnomePosGlyphList"><primary sortas="GnomePosGlyphList">GnomePosGlyphList</primary></indexterm><programlisting>typedef struct _GnomePosGlyphList GnomePosGlyphList;</programlisting>
+<para>
+</para></refsect2>
+<refsect2 id="gnome-pgl-from-gl" role="function">
+<title>gnome_pgl_from_gl ()</title>
+<indexterm zone="gnome-pgl-from-gl"><primary sortas="gnome_pgl_from_gl">gnome_pgl_from_gl</primary></indexterm><programlisting><link linkend="GnomePosGlyphList">GnomePosGlyphList</link> * gnome_pgl_from_gl                   (const <link linkend="GnomeGlyphList">GnomeGlyphList</link> *gl,
+                                                         const <link linkend="gdouble">gdouble</link> *transform,
+                                                         <link linkend="guint">guint</link> flags);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>gl</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>transform</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>flags</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gnome-pgl-destroy" role="function">
+<title>gnome_pgl_destroy ()</title>
+<indexterm zone="gnome-pgl-destroy"><primary sortas="gnome_pgl_destroy">gnome_pgl_destroy</primary></indexterm><programlisting><link linkend="void">void</link>                gnome_pgl_destroy                   (<link linkend="GnomePosGlyphList">GnomePosGlyphList</link> *pgl);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>pgl</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gnome-pgl-bbox" role="function">
+<title>gnome_pgl_bbox ()</title>
+<indexterm zone="gnome-pgl-bbox"><primary sortas="gnome_pgl_bbox">gnome_pgl_bbox</primary></indexterm><programlisting><link linkend="ArtDRect">ArtDRect</link> *          gnome_pgl_bbox                      (const <link linkend="GnomePosGlyphList">GnomePosGlyphList</link> *pgl,
+                                                         <link linkend="ArtDRect">ArtDRect</link> *bbox);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>pgl</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>bbox</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gnome-pgl-test-point" role="function">
+<title>gnome_pgl_test_point ()</title>
+<indexterm zone="gnome-pgl-test-point"><primary sortas="gnome_pgl_test_point">gnome_pgl_test_point</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            gnome_pgl_test_point                (const <link linkend="GnomePosGlyphList">GnomePosGlyphList</link> *pgl,
+                                                         <link linkend="gdouble">gdouble</link> x,
+                                                         <link linkend="gdouble">gdouble</link> y);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>pgl</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>x</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>y</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gnome-pgl-render-rgba8" role="function">
+<title>gnome_pgl_render_rgba8 ()</title>
+<indexterm zone="gnome-pgl-render-rgba8"><primary sortas="gnome_pgl_render_rgba8">gnome_pgl_render_rgba8</primary></indexterm><programlisting><link linkend="void">void</link>                gnome_pgl_render_rgba8              (const <link linkend="GnomePosGlyphList">GnomePosGlyphList</link> *pgl,
+                                                         <link linkend="gdouble">gdouble</link> x,
+                                                         <link linkend="gdouble">gdouble</link> y,
+                                                         <link linkend="guchar">guchar</link> *buf,
+                                                         <link linkend="gint">gint</link> width,
+                                                         <link linkend="gint">gint</link> height,
+                                                         <link linkend="gint">gint</link> rowstride,
+                                                         <link linkend="guint">guint</link> flags);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>pgl</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>x</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>y</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>buf</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>width</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>height</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>rowstride</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>flags</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gnome-pgl-render-rgb8" role="function">
+<title>gnome_pgl_render_rgb8 ()</title>
+<indexterm zone="gnome-pgl-render-rgb8"><primary sortas="gnome_pgl_render_rgb8">gnome_pgl_render_rgb8</primary></indexterm><programlisting><link linkend="void">void</link>                gnome_pgl_render_rgb8               (const <link linkend="GnomePosGlyphList">GnomePosGlyphList</link> *pgl,
+                                                         <link linkend="gdouble">gdouble</link> x,
+                                                         <link linkend="gdouble">gdouble</link> y,
+                                                         <link linkend="guchar">guchar</link> *buf,
+                                                         <link linkend="gint">gint</link> width,
+                                                         <link linkend="gint">gint</link> height,
+                                                         <link linkend="gint">gint</link> rowstride,
+                                                         <link linkend="guint">guint</link> flags);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>pgl</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>x</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>y</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>buf</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>width</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>height</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>rowstride</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>flags</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

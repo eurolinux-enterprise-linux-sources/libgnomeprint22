@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gnome-print-job</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.2">
+<link rel="home" href="index.html" title="GNOME Print Reference Manual">
+<link rel="up" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+<link rel="prev" href="libgnomeprint-gnome-print-config.html" title="gnome-print-config">
+<link rel="next" href="libgnomeprint-gnome-print-paper.html" title="gnome-print-paper">
+<meta name="generator" content="GTK-Doc V1.11 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="part" href="libgnomeprint.html" title="Part I. GNOME Print Overview">
+<link rel="part" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libgnomeprint-gnome-print-config.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libgnomeprintunsorted.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GNOME Print Reference Manual</th>
+<td><a accesskey="n" href="libgnomeprint-gnome-print-paper.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libgnomeprint-gnome-print-job.synopsis" class="shortcut">Top</a>
+                 | 
+                <a href="#libgnomeprint-gnome-print-job.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="libgnomeprint-gnome-print-job"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgnomeprint-gnome-print-job.top_of_page"></a>gnome-print-job</span></h2>
+<p>gnome-print-job</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libgnomeprint-gnome-print-job.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+                    <a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a>;
+<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *     <a class="link" href="libgnomeprint-gnome-print-job.html#gnome-print-job-new" title="gnome_print_job_new ()">gnome_print_job_new</a>                 (<a class="link" href="libgnomeprint-gnome-print-config.html#GnomePrintConfig" title="GnomePrintConfig">GnomePrintConfig</a> *config);
+<a class="link" href="libgnomeprint-gnome-print-config.html#GnomePrintConfig" title="GnomePrintConfig">GnomePrintConfig</a> *  <a class="link" href="libgnomeprint-gnome-print-job.html#gnome-print-job-get-config" title="gnome_print_job_get_config ()">gnome_print_job_get_config</a>          (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job);
+<a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> * <a class="link" href="libgnomeprint-gnome-print-job.html#gnome-print-job-get-context" title="gnome_print_job_get_context ()">gnome_print_job_get_context</a>         (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job);
+<a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                <a class="link" href="libgnomeprint-gnome-print-job.html#gnome-print-job-close" title="gnome_print_job_close ()">gnome_print_job_close</a>               (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job);
+<a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                <a class="link" href="libgnomeprint-gnome-print-job.html#gnome-print-job-print" title="gnome_print_job_print ()">gnome_print_job_print</a>               (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job);
+<a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                <a class="link" href="libgnomeprint-gnome-print-job.html#gnome-print-job-render" title="gnome_print_job_render ()">gnome_print_job_render</a>              (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job,
+                                                         <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *ctx);
+<a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                <a class="link" href="libgnomeprint-gnome-print-job.html#gnome-print-job-render-page" title="gnome_print_job_render_page ()">gnome_print_job_render_page</a>         (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job,
+                                                         <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *ctx,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> page,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> pageops);
+<a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                <a class="link" href="libgnomeprint-gnome-print-job.html#gnome-print-job-get-pages" title="gnome_print_job_get_pages ()">gnome_print_job_get_pages</a>           (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job);
+<a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="libgnomeprint-gnome-print-job.html#gnome-print-job-get-page-size-from-config" title="gnome_print_job_get_page_size_from_config ()">gnome_print_job_get_page_size_from_config</a>
+                                                        (<a class="link" href="libgnomeprint-gnome-print-config.html#GnomePrintConfig" title="GnomePrintConfig">GnomePrintConfig</a> *config,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> *width,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> *height);
+<a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                <a class="link" href="libgnomeprint-gnome-print-job.html#gnome-print-job-print-to-file" title="gnome_print_job_print_to_file ()">gnome_print_job_print_to_file</a>       (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gchar"
+>gchar</a> *output);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-gnome-print-job.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-gnome-print-job.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="GnomePrintJob"></a><h3>GnomePrintJob</h3>
+<pre class="programlisting">typedef struct _GnomePrintJob GnomePrintJob;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-job-new"></a><h3>gnome_print_job_new ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *     gnome_print_job_new                 (<a class="link" href="libgnomeprint-gnome-print-config.html#GnomePrintConfig" title="GnomePrintConfig">GnomePrintConfig</a> *config);</pre>
+<p>
+Creates a new GnomePrintJob.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>config</code></em> :</span></p></td>
+<td> The job options, can be NULL in which case a
+         default GnomePrintConfig is created
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A new GnomePrintJob, NULL on error
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-job-get-config"></a><h3>gnome_print_job_get_config ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-print-config.html#GnomePrintConfig" title="GnomePrintConfig">GnomePrintConfig</a> *  gnome_print_job_get_config          (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job);</pre>
+<p>
+Gets a referenced pointer to the configuration of the job</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a referenced GnomePrintConfig for this job, NULL on error
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-job-get-context"></a><h3>gnome_print_job_get_context ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> * gnome_print_job_get_context         (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job);</pre>
+<p>
+Retrieve the GnomePrintContext which applications
+print to.
+</p>
+<p>
+The caller is responsible to unref the context when s/he is done with it.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td> An initialised GnomePrintJob.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The printing context, NULL on error
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-job-close"></a><h3>gnome_print_job_close ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                gnome_print_job_close               (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job);</pre>
+<p>
+Closes the GnomePrintJob <em class="parameter"><code>job</code></em>, ready for printing or
+previewing. To be called after the application has finished
+sending the drawing commands</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td> A GnomePrintJob which has had printing performed
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-job-print"></a><h3>gnome_print_job_print ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                gnome_print_job_print               (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job);</pre>
+<p>
+Print the pages stored in the GnomePrintJob to
+the phyisical printing device.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td> A closed GnomePrintJob.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> GNOME_PRINT_OK on success GNOME_PRINT_ERROR_UNKNOWN otherwise
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-job-render"></a><h3>gnome_print_job_render ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                gnome_print_job_render              (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job,
+                                                         <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *ctx);</pre>
+<p>
+Renders printout to specified context
+(with layout, ignoring copies)</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>ctx</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-job-render-page"></a><h3>gnome_print_job_render_page ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                gnome_print_job_render_page         (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job,
+                                                         <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *ctx,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> page,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> pageops);</pre>
+<p>
+Renders the specified page <em class="parameter"><code>page</code></em></p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>ctx</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>page</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>pageops</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> 
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-job-get-pages"></a><h3>gnome_print_job_get_pages ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                gnome_print_job_get_pages           (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job);</pre>
+<p>
+Find the number of pages stored in a completed printout.
+This is the number of physical pages, so if the layout
+can hold 4 pages per page, and 5 logical pages are printed
+(5 beginpage/endpage convinations) 2 is returned</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td> An initialised and closed GnomePrintJob.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> the number of pages, 0 on error
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-job-get-page-size-from-config"></a><h3>gnome_print_job_get_page_size_from_config ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            gnome_print_job_get_page_size_from_config
+                                                        (<a class="link" href="libgnomeprint-gnome-print-config.html#GnomePrintConfig" title="GnomePrintConfig">GnomePrintConfig</a> *config,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> *width,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> *height);</pre>
+<p>
+Deprecated, use gnome_print_config_get_page_size</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>config</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>width</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>height</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> TRUE on success, FALSE on error
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-job-print-to-file"></a><h3>gnome_print_job_print_to_file ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                gnome_print_job_print_to_file       (<a class="link" href="libgnomeprint-gnome-print-job.html#GnomePrintJob" title="GnomePrintJob">GnomePrintJob</a> *job,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gchar"
+>gchar</a> *output);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>output</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.11</div>
+</body>
+</html>

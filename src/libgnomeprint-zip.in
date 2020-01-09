@@ -1,0 +1,44 @@
+#!/bin/sh
+
+# Build zipfiles for libgnomeprint on Win32. Separate runtime and
+# developer ones. Run after make install.
+
+ZIP=/tmp/libgnomeprint-@VERSION@.zip
+DEVZIP=/tmp/libgnomeprint-dev-@VERSION@.zip
+
+cd @prefix@
+rm $ZIP
+
+zip $ZIP -@ <<EOF
+bin/libgnomeprint-2-2-0.dll
+lib/libgnomeprint/@VERSION@/modules/libgnomeprintlpd.dll
+lib/libgnomeprint/@VERSION@/modules/libgnomeprintwin32.dll
+lib/libgnomeprint/@VERSION@/modules/filters/libgnomeprint-clip.dll
+lib/libgnomeprint/@VERSION@/modules/filters/libgnomeprint-draft.dll
+lib/libgnomeprint/@VERSION@/modules/filters/libgnomeprint-frgba.dll
+lib/libgnomeprint/@VERSION@/modules/filters/libgnomeprint-multipage.dll
+lib/libgnomeprint/@VERSION@/modules/filters/libgnomeprint-position.dll
+lib/libgnomeprint/@VERSION@/modules/filters/libgnomeprint-rotate.dll
+lib/libgnomeprint/@VERSION@/modules/filters/libgnomeprint-select.dll
+lib/libgnomeprint/@VERSION@/modules/filters/libgnomeprint-zoom.dll
+lib/libgnomeprint/@VERSION@/modules/transports/libgnomeprint-file.dll
+lib/libgnomeprint/@VERSION@/modules/transports/libgnomeprint-lpr.dll
+lib/libgnomeprint/@VERSION@/modules/transports/libgnomeprint-custom.dll
+share/libgnomeprint/@VERSION@/globals.xml
+share/libgnomeprint/@VERSION@/models/GNOME-GENERIC-PS.xml
+share/libgnomeprint/@VERSION@/models/GNOME-PDF-WRITER.xml
+share/libgnomeprint/@VERSION@/models/uninstalled/GNOME-META.xml
+share/libgnomeprint/@VERSION@/printers/GENERIC.xml
+share/libgnomeprint/@VERSION@/printers/PDF-WRITER.xml
+share/libgnomeprint/@VERSION@/printers/uninstalled/META.xml
+EOF
+
+zip $ZIP lib/locale/*/LC_MESSAGES/libgnomeprint-2.2.mo
+
+rm $DEVZIP
+zip -r $DEVZIP -@ <<EOF
+lib/libgnomeprint-2-2.dll.a
+lib/pkgconfig/libgnomeprint-2.2.pc
+include/libgnomeprint-2.2
+share/gtk-doc/html/libgnomeprint
+EOF

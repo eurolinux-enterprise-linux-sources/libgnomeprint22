@@ -1,0 +1,437 @@
+# translation of libgnomeprint.HEAD.ar.po to Arabic
+# translation of libgnomeprint.ar.po to
+# translation of libgnomeprint.po to
+# This file is distributed under the same license as the libgnomeprint.ar package.
+# Copyright (C) 2003 THE libgnomeprint.ar'S COPYRIGHT HOLDER
+#
+#
+# Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002.
+# Isam Bayazidi <bayazidi@arabeyes.org>, 2002.
+# Arafat Medini <lumina@silverpen.de>, 2003.
+#  <lumina@silverpen.de>, 2004.
+# Djihed Afifi <djihed@gmail.com>, 2006.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: libgnomeprint.HEAD.ar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-12 01:07+0000\n"
+"PO-Revision-Date: 2008-01-11 23:20+0200\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <doc@eglug.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
+"n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
+
+#: ../data/globals.xml.in.h:1
+msgid "1/3 A4"
+msgstr "1/3 A4"
+
+#: ../data/globals.xml.in.h:2
+msgid "1/3 A5"
+msgstr "1/3 A5"
+
+#: ../data/globals.xml.in.h:3
+msgid "1/4 A3"
+msgstr "1/4 A3"
+
+#: ../data/globals.xml.in.h:4
+msgid "1/4 A4"
+msgstr "1/4 A4"
+
+#: ../data/globals.xml.in.h:5
+msgid "1/8 A4"
+msgstr "1/8 A4"
+
+#: ../data/globals.xml.in.h:6
+msgid "2 pages to 1"
+msgstr "صفحتان لواحدة"
+
+#: ../data/globals.xml.in.h:7
+msgid "4 pages to 1"
+msgstr "أربع صفحات لواحدة"
+
+#: ../data/globals.xml.in.h:8
+msgid "A0"
+msgstr "A0"
+
+#: ../data/globals.xml.in.h:9
+msgid "A1"
+msgstr "A1"
+
+#: ../data/globals.xml.in.h:10
+msgid "A10"
+msgstr "A10"
+
+#: ../data/globals.xml.in.h:11
+msgid "A2"
+msgstr "A2"
+
+#: ../data/globals.xml.in.h:12
+msgid "A3"
+msgstr "A3"
+
+#. FIXME: fill in all papers and units. (Lauris)
+#. FIXME: load papers from file (Lauris)
+#. FIXME: use some fancy unit program (Lauris)
+#.
+#. * WARNING! Do not mess up with that - we use hardcoded numbers for base units!
+#.
+#: ../data/globals.xml.in.h:13 ../libgnomeprint/gnome-print-paper.c:43
+msgid "A4"
+msgstr "A4"
+
+#: ../data/globals.xml.in.h:14
+msgid "A5"
+msgstr "A5"
+
+#: ../data/globals.xml.in.h:15
+msgid "A6"
+msgstr "A6"
+
+#: ../data/globals.xml.in.h:16
+msgid "A7"
+msgstr "A7"
+
+#: ../data/globals.xml.in.h:17
+msgid "A8"
+msgstr "A8"
+
+#: ../data/globals.xml.in.h:18
+msgid "A9"
+msgstr "A9"
+
+#: ../data/globals.xml.in.h:19
+msgid "B0"
+msgstr "B0"
+
+#: ../data/globals.xml.in.h:20
+msgid "B1"
+msgstr "B1"
+
+#: ../data/globals.xml.in.h:21
+msgid "B10"
+msgstr "B10"
+
+#: ../data/globals.xml.in.h:22
+msgid "B2"
+msgstr "B2"
+
+#: ../data/globals.xml.in.h:23
+msgid "B3"
+msgstr "B3"
+
+#: ../data/globals.xml.in.h:24
+msgid "B4"
+msgstr "B4"
+
+#: ../data/globals.xml.in.h:25
+msgid "B5"
+msgstr "B5"
+
+#: ../data/globals.xml.in.h:26
+msgid "B6"
+msgstr "B6"
+
+#: ../data/globals.xml.in.h:27
+msgid "B7"
+msgstr "B7"
+
+#: ../data/globals.xml.in.h:28
+msgid "B8"
+msgstr "B8"
+
+#: ../data/globals.xml.in.h:29
+msgid "B9"
+msgstr "B9"
+
+#: ../data/globals.xml.in.h:30
+msgid "C0"
+msgstr "C0"
+
+#: ../data/globals.xml.in.h:31
+msgid "C1"
+msgstr "C1"
+
+#: ../data/globals.xml.in.h:32
+msgid "C10"
+msgstr "C10"
+
+#: ../data/globals.xml.in.h:33
+msgid "C2"
+msgstr "C2"
+
+#: ../data/globals.xml.in.h:34
+msgid "C3"
+msgstr "C3"
+
+#: ../data/globals.xml.in.h:35
+msgid "C4"
+msgstr "C4"
+
+#: ../data/globals.xml.in.h:36
+msgid "C5"
+msgstr "C5"
+
+#: ../data/globals.xml.in.h:37
+msgid "C6"
+msgstr "C6"
+
+#: ../data/globals.xml.in.h:38
+msgid "C6/C5 Envelope"
+msgstr "مظروف C6/C5"
+
+#: ../data/globals.xml.in.h:39
+msgid "C7"
+msgstr "C7"
+
+#: ../data/globals.xml.in.h:40
+msgid "C8"
+msgstr "C8"
+
+#: ../data/globals.xml.in.h:41
+msgid "C9"
+msgstr "C9"
+
+#: ../data/globals.xml.in.h:42
+msgid "Custom"
+msgstr "مخصّص"
+
+#: ../data/globals.xml.in.h:43
+msgid "DL Envelope"
+msgstr "مظروف DL"
+
+#: ../data/globals.xml.in.h:44
+msgid "Divided"
+msgstr "مقسوم"
+
+#: ../data/globals.xml.in.h:45
+msgid "Envelope 6x9"
+msgstr "مظروف 6x9"
+
+#: ../data/globals.xml.in.h:46
+msgid "Envelope No10"
+msgstr "مظروف رقم 10"
+
+#: ../data/globals.xml.in.h:47
+msgid "Folded"
+msgstr "مطوي"
+
+#: ../data/globals.xml.in.h:48
+msgid "Landscape"
+msgstr "عرضي"
+
+#: ../data/globals.xml.in.h:49
+msgid "Plain"
+msgstr "عادي"
+
+#: ../data/globals.xml.in.h:50
+msgid "Portrait"
+msgstr "طولي"
+
+#: ../data/globals.xml.in.h:51
+msgid "Rotated 180 degrees"
+msgstr "مدوّر 180 درجة"
+
+#: ../data/globals.xml.in.h:52
+msgid "Rotated 270 degrees"
+msgstr "مدوّر 270 درجة"
+
+#: ../data/globals.xml.in.h:53
+msgid "Rotated 90 degrees"
+msgstr "مدوّر 90 درجة"
+
+#: ../data/globals.xml.in.h:54
+msgid "Straight"
+msgstr "مستقيم"
+
+#: ../data/globals.xml.in.h:55
+msgid "US Executive"
+msgstr "إداري الولايات المتحدة"
+
+#: ../data/globals.xml.in.h:56
+msgid "US Legal"
+msgstr "قانوني الولايات المتحدة"
+
+#: ../data/globals.xml.in.h:57
+msgid "US Letter"
+msgstr "خطاب الولايات المتحدة"
+
+#: ../data/globals.xml.in.h:58
+msgid "Upside down landscape"
+msgstr "عرضي مقلوب"
+
+#: ../data/globals.xml.in.h:59
+msgid "Upside down portrait"
+msgstr "طولي مقلوب"
+
+#: ../data/printers/GENERIC.xml.in.h:1
+msgid "Generic Postscript"
+msgstr "‏Postscript أصلي"
+
+#: ../data/printers/PDF-WRITER.xml.in.h:1
+msgid "Create a PDF document"
+msgstr "انشئ مستند PDF"
+
+#. xgettext: Notice that this sentence contains every letter
+#. * of the English alphabet. This is a special sentence, called
+#. * a 'Pangram' (see: http://en.wikipedia.org/wiki/Pangram).
+#. * This sentence is used to demonstrate in a nice way how well
+#. * a font in your language looks. It's an improvement from having
+#. * just the alphabet of a language.
+#. * Therefore, add a short sentence here in your language that
+#. * demonstrates the letters of your alphabet.
+#: ../libgnomeprint/gnome-font-face.c:502
+msgid "The quick brown fox jumps over the lazy dog."
+msgstr "أَبْجَدْ هَوَّزْ حُطِّي كَلَمُنْ سَعْفَصْ قَرَشَتْ ثَخْذٌ ضَظْغٌ."
+
+#: ../libgnomeprint/gnome-print-job.c:146
+msgid "Job Configuration"
+msgstr "إعدادات المهمة"
+
+#: ../libgnomeprint/gnome-print-job.c:147
+msgid "The configuration for the print job"
+msgstr "إعدادات مهمة الطباعة"
+
+#: ../libgnomeprint/gnome-print-job.c:151
+msgid "Context"
+msgstr "السياق"
+
+#: ../libgnomeprint/gnome-print-job.c:152
+msgid "The context for the print job"
+msgstr "سياق مهمة الطباعة"
+
+#. Do not insert any elements before/between first 4
+#: ../libgnomeprint/gnome-print-unit.c:36
+msgid "Unit"
+msgstr "الوحدة"
+
+#: ../libgnomeprint/gnome-print-unit.c:36
+msgid "Units"
+msgstr "وحدات"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Point"
+msgstr "نقطة"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Pt"
+msgstr "نقطة"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Points"
+msgstr "نقاط"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Pts"
+msgstr "نقاط"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "Userspace unit"
+msgstr "وحدة في نطاق المستخدم"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "User"
+msgstr "المستخدم"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "Userspace units"
+msgstr "وحدات في نطاق المستخدم"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Pixel"
+msgstr "بكسل"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Px"
+msgstr "بكسل"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Pixels"
+msgstr "بكسلات"
+
+#. You can add new elements from this point forward
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "Percent"
+msgstr "في المائة"
+
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "%"
+msgstr "%"
+
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "Percents"
+msgstr "في المائة"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "Millimeter"
+msgstr "مليمتر"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "mm"
+msgstr "مم"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "Millimeters"
+msgstr "مليمترات"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "Centimeter"
+msgstr "سنتيمتر"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "cm"
+msgstr "سم"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "Centimeters"
+msgstr "سنتيمترات"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "Inch"
+msgstr "بوصة"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "in"
+msgstr "بوصة"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "Inches"
+msgstr "بوصات"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:398
+msgid "on the weekend"
+msgstr "في نهاية الأسبوع"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:400
+msgid "between midnight and 8 a.m."
+msgstr "بين منتصف الليل و 8 ص"
+
+#. gpa_option_item_new (node,"night",_("between 6 p.m. and 6 a.m."));
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:402
+msgid "between 6 p.m. and 6 a.m."
+msgstr "بين 6 م و 6 ص"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:404
+msgid "between 4 p.m. and midnight"
+msgstr "بين 4 م و منتصف الليل"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:405
+msgid "between 6 a.m. and 6 p.m."
+msgstr "بين 6 ص و 6 م"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:406
+msgid "when manually released"
+msgstr "عند إطلاقه يدويا"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:407
+msgid "immediately"
+msgstr "حالا"
+
+#: ../libgnomeprint/modules/lpd/gnome-print-lpd.c:119
+#, c-format
+msgid "%s (via lpr)"
+msgstr "%s (عن طريق lpr)"

@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gnome-print-unit</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.2">
+<link rel="home" href="index.html" title="GNOME Print Reference Manual">
+<link rel="up" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+<link rel="prev" href="libgnomeprint-Pango-Integration.html" title="Pango Integration">
+<link rel="next" href="libgnomeprint-gnome-rfont.html" title="gnome-rfont">
+<meta name="generator" content="GTK-Doc V1.11 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="part" href="libgnomeprint.html" title="Part I. GNOME Print Overview">
+<link rel="part" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libgnomeprint-Pango-Integration.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libgnomeprintunsorted.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GNOME Print Reference Manual</th>
+<td><a accesskey="n" href="libgnomeprint-gnome-rfont.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libgnomeprint-gnome-print-unit.synopsis" class="shortcut">Top</a>
+                 | 
+                <a href="#libgnomeprint-gnome-print-unit.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="libgnomeprint-gnome-print-unit"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgnomeprint-gnome-print-unit.top_of_page"></a>gnome-print-unit</span></h2>
+<p>gnome-print-unit</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libgnomeprint-gnome-print-unit.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+                    <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a>;
+enum                <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnitBase" title="enum GnomePrintUnitBase">GnomePrintUnitBase</a>;
+#define             <a class="link" href="libgnomeprint-gnome-print-unit.html#GNOME-PRINT-PS-UNIT--CAPS" title="GNOME_PRINT_PS_UNIT">GNOME_PRINT_PS_UNIT</a>
+#define             <a class="link" href="libgnomeprint-gnome-print-unit.html#GNOME-PRINT-UNITS-ALL--CAPS" title="GNOME_PRINT_UNITS_ALL">GNOME_PRINT_UNITS_ALL</a>
+const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> * <a class="link" href="libgnomeprint-gnome-print-unit.html#gnome-print-unit-get-identity" title="gnome_print_unit_get_identity ()">gnome_print_unit_get_identity</a>    (<a
+href="../glib/glib-Basic-Types.html#guint"
+>guint</a> base);
+const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> * <a class="link" href="libgnomeprint-gnome-print-unit.html#gnome-print-unit-get-default" title="gnome_print_unit_get_default ()">gnome_print_unit_get_default</a>     (void);
+const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> * <a class="link" href="libgnomeprint-gnome-print-unit.html#gnome-print-unit-get-by-name" title="gnome_print_unit_get_by_name ()">gnome_print_unit_get_by_name</a>     (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *name);
+const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> * <a class="link" href="libgnomeprint-gnome-print-unit.html#gnome-print-unit-get-by-abbreviation" title="gnome_print_unit_get_by_abbreviation ()">gnome_print_unit_get_by_abbreviation</a>
+                                                        (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *abbreviation);
+<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *             <a class="link" href="libgnomeprint-gnome-print-unit.html#gnome-print-unit-get-list" title="gnome_print_unit_get_list ()">gnome_print_unit_get_list</a>           (<a
+href="../glib/glib-Basic-Types.html#guint"
+>guint</a> bases);
+void                <a class="link" href="libgnomeprint-gnome-print-unit.html#gnome-print-unit-free-list" title="gnome_print_unit_free_list ()">gnome_print_unit_free_list</a>          (<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *units);
+<a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="libgnomeprint-gnome-print-unit.html#gnome-print-convert-distance" title="gnome_print_convert_distance ()">gnome_print_convert_distance</a>        (<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> *distance,
+                                                         const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> *from,
+                                                         const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> *to);
+<a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="libgnomeprint-gnome-print-unit.html#gnome-print-convert-distance-full" title="gnome_print_convert_distance_full ()">gnome_print_convert_distance_full</a>   (<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> *distance,
+                                                         const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> *from,
+                                                         const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> *to,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> ctmscale,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> devicescale);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-gnome-print-unit.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-gnome-print-unit.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="GnomePrintUnit"></a><h3>GnomePrintUnit</h3>
+<pre class="programlisting">typedef struct {
+	guint version : 8; /* Has to be 0 at moment */
+	guint base : 8; /* Base */
+	gdouble unittobase;
+	/* I am not absolutely sure, but seems that gettext can do the magic */
+	guchar *name;
+	guchar *abbr;
+	guchar *plural;
+	guchar *abbr_plural;
+} GnomePrintUnit;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GnomePrintUnitBase"></a><h3>enum GnomePrintUnitBase</h3>
+<pre class="programlisting">typedef enum {
+	GNOME_PRINT_UNIT_DIMENSIONLESS = (1 &lt;&lt; 0), /* For percentages and like */
+	GNOME_PRINT_UNIT_ABSOLUTE = (1 &lt;&lt; 1),      /* Real world distances - i.e. mm, cm... */
+	GNOME_PRINT_UNIT_DEVICE = (1 &lt;&lt; 2),        /* Semi-real device-dependent distances i.e. pixels */
+	GNOME_PRINT_UNIT_USERSPACE = (1 &lt;&lt; 3)      /* Mathematical coordinates */
+} GnomePrintUnitBase;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GNOME-PRINT-PS-UNIT--CAPS"></a><h3>GNOME_PRINT_PS_UNIT</h3>
+<pre class="programlisting">#define GNOME_PRINT_PS_UNIT   (gnome_print_unit_get_identity (GNOME_PRINT_UNIT_ABSOLUTE))
+</pre>
+<p>
+The <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit"><span class="type">GnomePrintUnit</span></a> structure that represents the absolute units.
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GNOME-PRINT-UNITS-ALL--CAPS"></a><h3>GNOME_PRINT_UNITS_ALL</h3>
+<pre class="programlisting">#define GNOME_PRINT_UNITS_ALL (GNOME_PRINT_UNIT_DIMENSIONLESS | GNOME_PRINT_UNIT_ABSOLUTE | GNOME_PRINT_UNIT_DEVICE | GNOME_PRINT_UNIT_USERSPACE)
+</pre>
+<p>
+Convenience macro for all of the different GNOME_PRINT_UNIT_* macros.
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-unit-get-identity"></a><h3>gnome_print_unit_get_identity ()</h3>
+<pre class="programlisting">const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> * gnome_print_unit_get_identity    (<a
+href="../glib/glib-Basic-Types.html#guint"
+>guint</a> base);</pre>
+<p>
+Retrieves the <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit"><span class="type">GnomePrintUnit</span></a> structure referenced by base <em class="parameter"><code>base</code></em>.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>base</code></em> :</span></p></td>
+<td> The base of the <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit"><span class="type">GnomePrintUnit</span></a> to retrieve
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit"><span class="type">GnomePrintUnit</span></a> structure representing <em class="parameter"><code>base</code></em>. <a
+href="../glib/glib-Standard-Macros.html#NULL--CAPS"
+><code class="literal">NULL</code></a> on error
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-unit-get-default"></a><h3>gnome_print_unit_get_default ()</h3>
+<pre class="programlisting">const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> * gnome_print_unit_get_default     (void);</pre>
+<p>
+Used to get the default <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit"><span class="type">GnomePrintUnit</span></a> structure.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A pointer to the default <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit"><span class="type">GnomePrintUnit</span></a> structure
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-unit-get-by-name"></a><h3>gnome_print_unit_get_by_name ()</h3>
+<pre class="programlisting">const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> * gnome_print_unit_get_by_name     (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *name);</pre>
+<p>
+Get a unit based on its name, for example "Millimeter" or "Inches".</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>name</code></em> :</span></p></td>
+<td> Name of the unit, as a string pointer
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A constant pointer to a <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit"><span class="type">GnomePrintUnit</span></a>, <a
+href="../glib/glib-Standard-Macros.html#NULL--CAPS"
+><code class="literal">NULL</code></a> on error
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-unit-get-by-abbreviation"></a><h3>gnome_print_unit_get_by_abbreviation ()</h3>
+<pre class="programlisting">const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> * gnome_print_unit_get_by_abbreviation
+                                                        (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *abbreviation);</pre>
+<p>
+Get a unit based on its abbreviation, for example "cm" "pts" or "in".</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>abbreviation</code></em> :</span></p></td>
+<td> Abbreviation of the unit, as a string pointer
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A constant pointer to a GnomePrintUnit, <a
+href="../glib/glib-Standard-Macros.html#NULL--CAPS"
+><code class="literal">NULL</code></a> on error
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-unit-get-list"></a><h3>gnome_print_unit_get_list ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *             gnome_print_unit_get_list           (<a
+href="../glib/glib-Basic-Types.html#guint"
+>guint</a> bases);</pre>
+<p>
+Gets a list of the units represented by the bases <em class="parameter"><code>bases</code></em>.  To get
+a list of all units then use <a class="link" href="libgnomeprint-gnome-print-unit.html#GNOME-PRINT-UNITS-ALL--CAPS" title="GNOME_PRINT_UNITS_ALL"><span class="type">GNOME_PRINT_UNITS_ALL</span></a>.  The list that
+is returned should be freed using <a class="link" href="libgnomeprint-gnome-print-unit.html#gnome-print-unit-free-list" title="gnome_print_unit_free_list ()"><span class="type">gnome_print_unit_free_list</span></a>.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>bases</code></em> :</span></p></td>
+<td> The bases to include in the list
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A pointer to a <a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+><span class="type">GList</span></a>, <a
+href="../glib/glib-Standard-Macros.html#NULL--CAPS"
+><code class="literal">NULL</code></a> on error
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-unit-free-list"></a><h3>gnome_print_unit_free_list ()</h3>
+<pre class="programlisting">void                gnome_print_unit_free_list          (<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *units);</pre>
+<p>
+Used to free the list of units created by <a class="link" href="libgnomeprint-gnome-print-unit.html#gnome-print-unit-get-list" title="gnome_print_unit_get_list ()"><span class="type">gnome_print_unit_get_list</span></a>.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>units</code></em> :</span></p></td>
+<td> A pointer to a GList to be freed
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-convert-distance"></a><h3>gnome_print_convert_distance ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            gnome_print_convert_distance        (<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> *distance,
+                                                         const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> *from,
+                                                         const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> *to);</pre>
+<p>
+Check whether a conversion between <em class="parameter"><code>from</code></em> and <em class="parameter"><code>to</code></em> can be made</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>distance</code></em> :</span></p></td>
+<td> The distance to convert, and the converted value on success
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>from</code></em> :</span></p></td>
+<td> Units to convert from
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>to</code></em> :</span></p></td>
+<td> Units to convert to
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <a
+href="../glib/glib-Standard-Macros.html#TRUE--CAPS"
+><code class="literal">TRUE</code></a> if the conversion is possible, <a
+href="../glib/glib-Standard-Macros.html#FALSE--CAPS"
+><code class="literal">FALSE</code></a> if
+         it is not or on error
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-convert-distance-full"></a><h3>gnome_print_convert_distance_full ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            gnome_print_convert_distance_full   (<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> *distance,
+                                                         const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> *from,
+                                                         const <a class="link" href="libgnomeprint-gnome-print-unit.html#GnomePrintUnit" title="GnomePrintUnit">GnomePrintUnit</a> *to,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> ctmscale,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> devicescale);</pre>
+<p>
+Convert a distance from one unit to another.  You should supply a scale
+as necessary.
+</p>
+<p>
+ctmscale is userspace-&gt;absolute, devicescale is device-&gt;absolute</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>distance</code></em> :</span></p></td>
+<td> The distance to convert, and the result on success
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>from</code></em> :</span></p></td>
+<td> Units to convert from
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>to</code></em> :</span></p></td>
+<td> Units to convert to
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>ctmscale</code></em> :</span></p></td>
+<td> The userspace scale to use
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>devicescale</code></em> :</span></p></td>
+<td> The device scale to use
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <a
+href="../glib/glib-Standard-Macros.html#TRUE--CAPS"
+><code class="literal">TRUE</code></a> if the conversion is possible, <a
+href="../glib/glib-Standard-Macros.html#FALSE--CAPS"
+><code class="literal">FALSE</code></a> if
+         it is not or on error
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.11</div>
+</body>
+</html>

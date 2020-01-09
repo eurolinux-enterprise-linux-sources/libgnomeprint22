@@ -1,0 +1,1249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gnome-font</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.2">
+<link rel="home" href="index.html" title="GNOME Print Reference Manual">
+<link rel="up" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+<link rel="prev" href="libgnomeprint-gnome-font-face.html" title="gnome-font-face">
+<link rel="next" href="libgnomeprint-gnome-glyphlist.html" title="gnome-glyphlist">
+<meta name="generator" content="GTK-Doc V1.11 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="part" href="libgnomeprint.html" title="Part I. GNOME Print Overview">
+<link rel="part" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libgnomeprint-gnome-font-face.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libgnomeprintunsorted.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GNOME Print Reference Manual</th>
+<td><a accesskey="n" href="libgnomeprint-gnome-glyphlist.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libgnomeprint-gnome-font.synopsis" class="shortcut">Top</a>
+                 | 
+                <a href="#libgnomeprint-gnome-font.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="libgnomeprint-gnome-font"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgnomeprint-gnome-font.top_of_page"></a>gnome-font</span></h2>
+<p>gnome-font</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libgnomeprint-gnome-font.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+                    <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a>;
+                    <a class="link" href="libgnomeprint-gnome-font.html#GnomeFontFace" title="GnomeFontFace">GnomeFontFace</a>;
+#define             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-ref" title="gnome_font_ref()">gnome_font_ref</a>                      (f)
+#define             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-unref" title="gnome_font_unref()">gnome_font_unref</a>                    (f)
+enum                <a class="link" href="libgnomeprint-gnome-font.html#GnomeFontWeight" title="enum GnomeFontWeight">GnomeFontWeight</a>;
+const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *      <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-name" title="gnome_font_get_name ()">gnome_font_get_name</a>                 (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *      <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-family-name" title="gnome_font_get_family_name ()">gnome_font_get_family_name</a>          (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *      <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-species-name" title="gnome_font_get_species_name ()">gnome_font_get_species_name</a>         (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *      <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-ps-name" title="gnome_font_get_ps_name ()">gnome_font_get_ps_name</a>              (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+<a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-lookup-default" title="gnome_font_lookup_default ()">gnome_font_lookup_default</a>           (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> unicode);
+ArtPoint *          <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-glyph-stdadvance" title="gnome_font_get_glyph_stdadvance ()">gnome_font_get_glyph_stdadvance</a>     (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph,
+                                                         ArtPoint *advance);
+ArtDRect *          <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-glyph-stdbbox" title="gnome_font_get_glyph_stdbbox ()">gnome_font_get_glyph_stdbbox</a>        (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph,
+                                                         ArtDRect *bbox);
+const ArtBpath *    <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-glyph-stdoutline" title="gnome_font_get_glyph_stdoutline ()">gnome_font_get_glyph_stdoutline</a>     (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph);
+ArtPoint *          <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-glyph-stdkerning" title="gnome_font_get_glyph_stdkerning ()">gnome_font_get_glyph_stdkerning</a>     (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph0,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph1,
+                                                         ArtPoint *kerning);
+<a class="link" href="libgnomeprint-gnome-font.html#GnomeFontFace" title="GnomeFontFace">GnomeFontFace</a> *     <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-face" title="gnome_font_get_face ()">gnome_font_get_face</a>                 (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-size" title="gnome_font_get_size ()">gnome_font_get_size</a>                 (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+#define             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-weight-code" title="gnome_font_get_weight_code()">gnome_font_get_weight_code</a>          (f)
+#define             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-is-italic" title="gnome_font_is_italic()">gnome_font_is_italic</a>                (f)
+#define             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-is-fixed-width" title="gnome_font_is_fixed_width()">gnome_font_is_fixed_width</a>           (f)
+<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-ascender" title="gnome_font_get_ascender ()">gnome_font_get_ascender</a>             (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-descender" title="gnome_font_get_descender ()">gnome_font_get_descender</a>            (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-underline-position" title="gnome_font_get_underline_position ()">gnome_font_get_underline_position</a>   (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-underline-thickness" title="gnome_font_get_underline_thickness ()">gnome_font_get_underline_thickness</a>  (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-glyph-width" title="gnome_font_get_glyph_width ()">gnome_font_get_glyph_width</a>          (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph);
+<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-glyph-kerning" title="gnome_font_get_glyph_kerning ()">gnome_font_get_glyph_kerning</a>        (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph1,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph2);
+<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-find-closest-from-weight-slant" title="gnome_font_find_closest_from_weight_slant ()">gnome_font_find_closest_from_weight_slant</a>
+                                                        (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *family,
+                                                         <a class="link" href="libgnomeprint-gnome-font.html#GnomeFontWeight" title="enum GnomeFontWeight">GnomeFontWeight</a> weight,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> italic,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> size);
+<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-find" title="gnome_font_find ()">gnome_font_find</a>                     (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *name,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> size);
+<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-find-closest" title="gnome_font_find_closest ()">gnome_font_find_closest</a>             (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *name,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> size);
+<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-find-from-full-name" title="gnome_font_find_from_full_name ()">gnome_font_find_from_full_name</a>      (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *string);
+<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-find-from-filename" title="gnome_font_find_from_filename ()">gnome_font_find_from_filename</a>       (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *filename,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> index_,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> size);
+<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-find-closest-from-full-name" title="gnome_font_find_closest_from_full_name ()">gnome_font_find_closest_from_full_name</a>
+                                                        (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *string);
+<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-list" title="gnome_font_list ()">gnome_font_list</a>                     (void);
+void                <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-list-free" title="gnome_font_list_free ()">gnome_font_list_free</a>                (<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *fontlist);
+<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-family-list" title="gnome_font_family_list ()">gnome_font_family_list</a>              (void);
+void                <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-family-list-free" title="gnome_font_family_list_free ()">gnome_font_family_list_free</a>         (<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *fontlist);
+<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *             <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-style-list" title="gnome_font_style_list ()">gnome_font_style_list</a>               (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *family);
+void                <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-style-list-free" title="gnome_font_style_list_free ()">gnome_font_style_list_free</a>          (<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *styles);
+<a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *            <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-full-name" title="gnome_font_get_full_name ()">gnome_font_get_full_name</a>            (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);
+<a
+href="../pango/pango-Fonts.html#PangoFont"
+>PangoFont</a> *         <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-closest-pango-font" title="gnome_font_get_closest_pango_font ()">gnome_font_get_closest_pango_font</a>   (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../pango/pango-Fonts.html#PangoFontMap"
+>PangoFontMap</a> *map,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> dpi);
+<a
+href="../pango/pango-Fonts.html#PangoFontDescription"
+>PangoFontDescription</a> * <a class="link" href="libgnomeprint-gnome-font.html#gnome-font-get-pango-description" title="gnome_font_get_pango_description ()">gnome_font_get_pango_description</a> (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> dpi);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-gnome-font.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-gnome-font.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="GnomeFont"></a><h3>GnomeFont</h3>
+<pre class="programlisting">typedef struct _GnomeFont GnomeFont;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GnomeFontFace"></a><h3>GnomeFontFace</h3>
+<pre class="programlisting">typedef struct _GnomeFontFace GnomeFontFace;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-ref"></a><h3>gnome_font_ref()</h3>
+<pre class="programlisting">#define             gnome_font_ref(f)</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>f</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-unref"></a><h3>gnome_font_unref()</h3>
+<pre class="programlisting">#define             gnome_font_unref(f)</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>f</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GnomeFontWeight"></a><h3>enum GnomeFontWeight</h3>
+<pre class="programlisting">typedef enum {
+	GNOME_FONT_LIGHTEST = 100,
+	GNOME_FONT_EXTRA_LIGHT = 100,
+	GNOME_FONT_THIN = 200,
+	GNOME_FONT_LIGHT = 300,
+	GNOME_FONT_BOOK = 400,
+	GNOME_FONT_REGULAR = 400,
+	GNOME_FONT_MEDIUM = 500,
+	GNOME_FONT_SEMI = 600,
+	GNOME_FONT_DEMI = 600,
+	GNOME_FONT_BOLD = 700,
+	GNOME_FONT_HEAVY = 900,
+	GNOME_FONT_EXTRABOLD = 900,
+	GNOME_FONT_BLACK = 1000,
+	GNOME_FONT_EXTRABLACK = 1100,
+	GNOME_FONT_HEAVIEST = 1100
+} GnomeFontWeight;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-name"></a><h3>gnome_font_get_name ()</h3>
+<pre class="programlisting">const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *      gnome_font_get_name                 (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-family-name"></a><h3>gnome_font_get_family_name ()</h3>
+<pre class="programlisting">const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *      gnome_font_get_family_name          (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-species-name"></a><h3>gnome_font_get_species_name ()</h3>
+<pre class="programlisting">const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *      gnome_font_get_species_name         (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-ps-name"></a><h3>gnome_font_get_ps_name ()</h3>
+<pre class="programlisting">const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *      gnome_font_get_ps_name              (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-lookup-default"></a><h3>gnome_font_lookup_default ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a>                gnome_font_lookup_default           (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> unicode);</pre>
+<p>
+Get the glyph number corresponding to a given unicode</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>unicode</code></em> :</span></p></td>
+<td> 
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> glyph number, -1 if it is not mapped
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-glyph-stdadvance"></a><h3>gnome_font_get_glyph_stdadvance ()</h3>
+<pre class="programlisting">ArtPoint *          gnome_font_get_glyph_stdadvance     (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph,
+                                                         ArtPoint *advance);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>glyph</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>advance</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-glyph-stdbbox"></a><h3>gnome_font_get_glyph_stdbbox ()</h3>
+<pre class="programlisting">ArtDRect *          gnome_font_get_glyph_stdbbox        (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph,
+                                                         ArtDRect *bbox);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>glyph</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>bbox</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-glyph-stdoutline"></a><h3>gnome_font_get_glyph_stdoutline ()</h3>
+<pre class="programlisting">const ArtBpath *    gnome_font_get_glyph_stdoutline     (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>glyph</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-glyph-stdkerning"></a><h3>gnome_font_get_glyph_stdkerning ()</h3>
+<pre class="programlisting">ArtPoint *          gnome_font_get_glyph_stdkerning     (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph0,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph1,
+                                                         ArtPoint *kerning);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>glyph0</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>glyph1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>kerning</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-face"></a><h3>gnome_font_get_face ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-font.html#GnomeFontFace" title="GnomeFontFace">GnomeFontFace</a> *     gnome_font_get_face                 (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-size"></a><h3>gnome_font_get_size ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             gnome_font_get_size                 (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-weight-code"></a><h3>gnome_font_get_weight_code()</h3>
+<pre class="programlisting">#define             gnome_font_get_weight_code(f)</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>f</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-is-italic"></a><h3>gnome_font_is_italic()</h3>
+<pre class="programlisting">#define             gnome_font_is_italic(f)</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>f</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-is-fixed-width"></a><h3>gnome_font_is_fixed_width()</h3>
+<pre class="programlisting">#define             gnome_font_is_fixed_width(f)</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>f</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-ascender"></a><h3>gnome_font_get_ascender ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             gnome_font_get_ascender             (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+This works with the standard Adobe encoding and without kerning or
+ligatures. When the text libs get written, this function will be
+deprecated.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td> the GnomeFont to operate on
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The ascender of the font.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-descender"></a><h3>gnome_font_get_descender ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             gnome_font_get_descender            (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+This works with the standard Adobe encoding and without kerning or
+ligatures. When the text libs get written, this function will be
+deprecated.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td> the GnomeFont to operate on
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The descender of the font.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-underline-position"></a><h3>gnome_font_get_underline_position ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             gnome_font_get_underline_position   (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+This works with the standard Adobe encoding and without kerning or
+ligatures. When the text libs get written, this function will be
+deprecated.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td> the GnomeFont to operate on
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The underline position of the font.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-underline-thickness"></a><h3>gnome_font_get_underline_thickness ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             gnome_font_get_underline_thickness  (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+This works with the standard Adobe encoding and without kerning or
+ligatures. When the text libs get written, this function will be
+deprecated.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td> the GnomeFont to operate on
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The underline thickness of the font.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-glyph-width"></a><h3>gnome_font_get_glyph_width ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             gnome_font_get_glyph_width          (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>glyph</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-glyph-kerning"></a><h3>gnome_font_get_glyph_kerning ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>             gnome_font_get_glyph_kerning        (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph1,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> glyph2);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>glyph1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>glyph2</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-find-closest-from-weight-slant"></a><h3>gnome_font_find_closest_from_weight_slant ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         gnome_font_find_closest_from_weight_slant
+                                                        (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *family,
+                                                         <a class="link" href="libgnomeprint-gnome-font.html#GnomeFontWeight" title="enum GnomeFontWeight">GnomeFontWeight</a> weight,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> italic,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> size);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>family</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>weight</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>italic</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>size</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-find"></a><h3>gnome_font_find ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         gnome_font_find                     (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *name,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> size);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>name</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>size</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-find-closest"></a><h3>gnome_font_find_closest ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         gnome_font_find_closest             (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *name,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> size);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>name</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>size</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-find-from-full-name"></a><h3>gnome_font_find_from_full_name ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         gnome_font_find_from_full_name      (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *string);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>string</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-find-from-filename"></a><h3>gnome_font_find_from_filename ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         gnome_font_find_from_filename       (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *filename,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gint"
+>gint</a> index_,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> size);</pre>
+<p>
+Creates a font using the filename and index of the face within the file to
+identify the <a class="link" href="libgnomeprint-gnome-font.html#GnomeFontFace" title="GnomeFontFace"><span class="type">GnomeFontFace</span></a>. The font must already be within
+the system font database; this can't be used to access arbitrary
+fonts on disk.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>filename</code></em> :</span></p></td>
+<td> filename of a font face in the system font database
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>index_</code></em> :</span></p></td>
+<td> index of the face within <em class="parameter"><code>filename</code></em>. (Font formats such as
+         TTC/TrueType Collections can have multiple fonts within
+         a single file.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>size</code></em> :</span></p></td>
+<td> size (in points) at which to load the font
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a newly created font if the face could be located,
+ otherwise <a
+href="../glib/glib-Standard-Macros.html#NULL--CAPS"
+><code class="literal">NULL</code></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-find-closest-from-full-name"></a><h3>gnome_font_find_closest_from_full_name ()</h3>
+<pre class="programlisting"><a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *         gnome_font_find_closest_from_full_name
+                                                        (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *string);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>string</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-list"></a><h3>gnome_font_list ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *             gnome_font_list                     (void);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-list-free"></a><h3>gnome_font_list_free ()</h3>
+<pre class="programlisting">void                gnome_font_list_free                (<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *fontlist);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>fontlist</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-family-list"></a><h3>gnome_font_family_list ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *             gnome_font_family_list              (void);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-family-list-free"></a><h3>gnome_font_family_list_free ()</h3>
+<pre class="programlisting">void                gnome_font_family_list_free         (<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *fontlist);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>fontlist</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-style-list"></a><h3>gnome_font_style_list ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *             gnome_font_style_list               (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *family);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>family</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-style-list-free"></a><h3>gnome_font_style_list_free ()</h3>
+<pre class="programlisting">void                gnome_font_style_list_free          (<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *styles);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>styles</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-full-name"></a><h3>gnome_font_get_full_name ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *            gnome_font_get_full_name            (<a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-closest-pango-font"></a><h3>gnome_font_get_closest_pango_font ()</h3>
+<pre class="programlisting"><a
+href="../pango/pango-Fonts.html#PangoFont"
+>PangoFont</a> *         gnome_font_get_closest_pango_font   (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../pango/pango-Fonts.html#PangoFontMap"
+>PangoFontMap</a> *map,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> dpi);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>map</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>dpi</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-font-get-pango-description"></a><h3>gnome_font_get_pango_description ()</h3>
+<pre class="programlisting"><a
+href="../pango/pango-Fonts.html#PangoFontDescription"
+>PangoFontDescription</a> * gnome_font_get_pango_description (const <a class="link" href="libgnomeprint-gnome-font.html#GnomeFont" title="GnomeFont">GnomeFont</a> *font,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> dpi);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>dpi</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.11</div>
+</body>
+</html>

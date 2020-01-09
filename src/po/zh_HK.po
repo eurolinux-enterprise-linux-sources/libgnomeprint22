@@ -1,0 +1,443 @@
+# Chinese (Hong Kong) translation of libgnomeprint.
+# Copyright (C) 2001, 02, 03, 04, 05 Free Software Foundation, Inc.
+# Translators: 
+# Abel Cheung <abel@oaka.org>, 2001-2006.
+# Ching-Hung Lin <2billlin@yahoo.com.tw>, 2004
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libgnomeprint 2.18.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-11-07 14:33+0100\n"
+"PO-Revision-Date: 2009-02-09 08:00+0800\n"
+"Last-Translator: Ching-Hung Lin <2billlin@yahoo.com.tw>\n"
+"Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/globals.xml.in.h:1
+msgid "1/3 A4"
+msgstr "1/3 A4"
+
+#: ../data/globals.xml.in.h:2
+msgid "1/3 A5"
+msgstr "1/3 A5"
+
+#: ../data/globals.xml.in.h:3
+msgid "1/4 A3"
+msgstr "1/4 A3"
+
+#: ../data/globals.xml.in.h:4
+msgid "1/4 A4"
+msgstr "1/4 A4"
+
+#: ../data/globals.xml.in.h:5
+msgid "1/8 A4"
+msgstr "1/8 A4"
+
+#: ../data/globals.xml.in.h:6
+msgid "2 pages to 1"
+msgstr "2 頁合併為 1 頁"
+
+#: ../data/globals.xml.in.h:7
+msgid "4 pages to 1"
+msgstr "4 頁合併為 1 頁"
+
+#: ../data/globals.xml.in.h:8
+msgid "A0"
+msgstr "A0"
+
+#: ../data/globals.xml.in.h:9
+msgid "A1"
+msgstr "A1"
+
+#: ../data/globals.xml.in.h:10
+msgid "A10"
+msgstr "A10"
+
+#: ../data/globals.xml.in.h:11
+msgid "A2"
+msgstr "A2"
+
+#: ../data/globals.xml.in.h:12
+msgid "A3"
+msgstr "A3"
+
+#. FIXME: fill in all papers and units. (Lauris)
+#. FIXME: load papers from file (Lauris)
+#. FIXME: use some fancy unit program (Lauris)
+#.
+#. * WARNING! Do not mess up with that - we use hardcoded numbers for base units!
+#.
+#: ../data/globals.xml.in.h:13 ../libgnomeprint/gnome-print-paper.c:43
+msgid "A4"
+msgstr "A4"
+
+#: ../data/globals.xml.in.h:14
+msgid "A5"
+msgstr "A5"
+
+#: ../data/globals.xml.in.h:15
+msgid "A6"
+msgstr "A6"
+
+#: ../data/globals.xml.in.h:16
+msgid "A7"
+msgstr "A7"
+
+#: ../data/globals.xml.in.h:17
+msgid "A8"
+msgstr "A8"
+
+#: ../data/globals.xml.in.h:18
+msgid "A9"
+msgstr "A9"
+
+#: ../data/globals.xml.in.h:19
+msgid "B0"
+msgstr "B0"
+
+#: ../data/globals.xml.in.h:20
+msgid "B1"
+msgstr "B1"
+
+#: ../data/globals.xml.in.h:21
+msgid "B10"
+msgstr "B10"
+
+#: ../data/globals.xml.in.h:22
+msgid "B2"
+msgstr "B2"
+
+#: ../data/globals.xml.in.h:23
+msgid "B3"
+msgstr "B3"
+
+#: ../data/globals.xml.in.h:24
+msgid "B4"
+msgstr "B4"
+
+#: ../data/globals.xml.in.h:25
+msgid "B5"
+msgstr "B5"
+
+#: ../data/globals.xml.in.h:26
+msgid "B6"
+msgstr "B6"
+
+#: ../data/globals.xml.in.h:27
+msgid "B7"
+msgstr "B7"
+
+#: ../data/globals.xml.in.h:28
+msgid "B8"
+msgstr "B8"
+
+#: ../data/globals.xml.in.h:29
+msgid "B9"
+msgstr "B9"
+
+#: ../data/globals.xml.in.h:30
+msgid "C0"
+msgstr "C0"
+
+#: ../data/globals.xml.in.h:31
+msgid "C1"
+msgstr "C1"
+
+#: ../data/globals.xml.in.h:32
+msgid "C10"
+msgstr "C10"
+
+#: ../data/globals.xml.in.h:33
+msgid "C2"
+msgstr "C2"
+
+#: ../data/globals.xml.in.h:34
+msgid "C3"
+msgstr "C3"
+
+#: ../data/globals.xml.in.h:35
+msgid "C4"
+msgstr "C4"
+
+#: ../data/globals.xml.in.h:36
+msgid "C5"
+msgstr "C5"
+
+#: ../data/globals.xml.in.h:37
+msgid "C6"
+msgstr "C6"
+
+#: ../data/globals.xml.in.h:38
+msgid "C6/C5 Envelope"
+msgstr "C6/C5 信封"
+
+#: ../data/globals.xml.in.h:39
+msgid "C7"
+msgstr "C7"
+
+#: ../data/globals.xml.in.h:40
+msgid "C8"
+msgstr "C8"
+
+#: ../data/globals.xml.in.h:41
+msgid "C9"
+msgstr "C9"
+
+#: ../data/globals.xml.in.h:42
+msgid "Custom"
+msgstr "自選"
+
+#: ../data/globals.xml.in.h:43
+msgid "DL Envelope"
+msgstr "DL 信封"
+
+# I don't know if there's specialized term in printing -- Abel
+#: ../data/globals.xml.in.h:44
+msgid "Divided"
+msgstr "分割"
+
+#: ../data/globals.xml.in.h:45
+msgid "Envelope 6x9"
+msgstr "6×9 英吋信封"
+
+#: ../data/globals.xml.in.h:46
+msgid "Envelope No10"
+msgstr "10 號信封"
+
+# I don't know if there's specialized term in printing -- Abel
+#: ../data/globals.xml.in.h:47
+msgid "Folded"
+msgstr "折疊"
+
+#: ../data/globals.xml.in.h:48
+msgid "Landscape"
+msgstr "橫向"
+
+#: ../data/globals.xml.in.h:49
+msgid "Plain"
+msgstr "普通"
+
+#: ../data/globals.xml.in.h:50
+msgid "Portrait"
+msgstr "直向"
+
+#: ../data/globals.xml.in.h:51
+msgid "Rotated 180 degrees"
+msgstr "旋轉 180 度"
+
+#: ../data/globals.xml.in.h:52
+msgid "Rotated 270 degrees"
+msgstr "旋轉 270 度"
+
+#: ../data/globals.xml.in.h:53
+msgid "Rotated 90 degrees"
+msgstr "旋轉 90 度"
+
+#: ../data/globals.xml.in.h:54
+msgid "Straight"
+msgstr "原來方向"
+
+#: ../data/globals.xml.in.h:55
+msgid "US Executive"
+msgstr "US Executive"
+
+#: ../data/globals.xml.in.h:56
+msgid "US Legal"
+msgstr "US Legal"
+
+#: ../data/globals.xml.in.h:57
+msgid "US Letter"
+msgstr "US Letter"
+
+#: ../data/globals.xml.in.h:58
+msgid "Upside down landscape"
+msgstr "上下倒置、橫向"
+
+#: ../data/globals.xml.in.h:59
+msgid "Upside down portrait"
+msgstr "上下倒置、直向"
+
+#: ../data/printers/GENERIC.xml.in.h:1
+msgid "Generic Postscript"
+msgstr "一般 Postscript"
+
+#: ../data/printers/PDF-WRITER.xml.in.h:1
+msgid "Create a PDF document"
+msgstr "製作 PDF 文件"
+
+# ---------------------------------------
+# The quick brown fox jumps over the lazy dog
+# 這句話用最少的字使用了26個英文字母
+# 在 M$ 的 Office 中是用來製造虛擬文件的預設字串
+# 在此不知道要如何翻譯比較好
+# 所以維持之前 Abel 的翻譯 -- Ching-Hung Lin
+# ---------------------------------------
+# 這句稱為 pangram，是用來測試字體的
+# 中文不可能將幾萬個字都顯示出來，所以只要能夠
+# 隨便顯示一些中文字就夠了。 -- Abel Cheung
+# ---------------------------------------
+# zh_HK: msgstr "You should see 10 Chinese characters: ‘由深水埗搭𨋢去鰂魚涌’"
+# zh_TW: msgstr "The following is Chinese: ‘中文測試’"
+#. xgettext: Notice that this sentence contains every letter
+#. * of the English alphabet. This is a special sentence, called
+#. * a 'Pangram' (see: http://en.wikipedia.org/wiki/Pangram).
+#. * This sentence is used to demonstrate in a nice way how well
+#. * a font in your language looks. It's an improvement from having
+#. * just the alphabet of a language.
+#. * Therefore, add a short sentence here in your language that
+#. * demonstrates the letters of your alphabet.
+#: ../libgnomeprint/gnome-font-face.c:502
+msgid "The quick brown fox jumps over the lazy dog."
+msgstr "You should see 10 Chinese characters: ‘由深水埗搭𨋢去鰂魚涌’"
+
+#: ../libgnomeprint/gnome-print-job.c:146
+msgid "Job Configuration"
+msgstr "工作設定"
+
+#: ../libgnomeprint/gnome-print-job.c:147
+msgid "The configuration for the print job"
+msgstr "打印工作的設定"
+
+#: ../libgnomeprint/gnome-print-job.c:151
+msgid "Context"
+msgstr "文件內容"
+
+#: ../libgnomeprint/gnome-print-job.c:152
+msgid "The context for the print job"
+msgstr "打印工作的文件內容"
+
+#. Do not insert any elements before/between first 4
+#: ../libgnomeprint/gnome-print-unit.c:36
+msgid "Unit"
+msgstr "單位"
+
+#: ../libgnomeprint/gnome-print-unit.c:36
+msgid "Units"
+msgstr "單位"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Point"
+msgstr "點"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Pt"
+msgstr "點"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Points"
+msgstr "點"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Pts"
+msgstr "點"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "Userspace unit"
+msgstr "自選單位"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "User"
+msgstr "自選"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "Userspace units"
+msgstr "自選單位"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Pixel"
+msgstr "像素"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Px"
+msgstr "Px"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Pixels"
+msgstr "像素"
+
+#. You can add new elements from this point forward
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "Percent"
+msgstr "百分比"
+
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "%"
+msgstr "%"
+
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "Percents"
+msgstr "百分比"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "Millimeter"
+msgstr "毫米"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "mm"
+msgstr "毫米"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "Millimeters"
+msgstr "毫米"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "Centimeter"
+msgstr "厘米"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "cm"
+msgstr "厘米"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "Centimeters"
+msgstr "厘米"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "Inch"
+msgstr "英吋"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "in"
+msgstr "英吋"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "Inches"
+msgstr "英吋"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:398
+msgid "on the weekend"
+msgstr "週末"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:400
+msgid "between midnight and 8 a.m."
+msgstr "午夜零時到早上八時"
+
+#. gpa_option_item_new (node,"night",_("between 6 p.m. and 6 a.m."));
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:402
+msgid "between 6 p.m. and 6 a.m."
+msgstr "晚上六時到翌日早上六時"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:404
+msgid "between 4 p.m. and midnight"
+msgstr "下午四時到午夜零時"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:405
+msgid "between 6 a.m. and 6 p.m."
+msgstr "早上六時到晚上六時"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:406
+msgid "when manually released"
+msgstr "當手動設定時"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:407
+msgid "immediately"
+msgstr "立即"
+
+#: ../libgnomeprint/modules/lpd/gnome-print-lpd.c:119
+#, c-format
+msgid "%s (via lpr)"
+msgstr "%s (經 lpr)"

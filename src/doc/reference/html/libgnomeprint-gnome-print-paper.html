@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gnome-print-paper</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.2">
+<link rel="home" href="index.html" title="GNOME Print Reference Manual">
+<link rel="up" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+<link rel="prev" href="libgnomeprint-gnome-print-job.html" title="gnome-print-job">
+<link rel="next" href="libgnomeprint-gnome-print.html" title="gnome-print">
+<meta name="generator" content="GTK-Doc V1.11 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="part" href="libgnomeprint.html" title="Part I. GNOME Print Overview">
+<link rel="part" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libgnomeprint-gnome-print-job.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libgnomeprintunsorted.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GNOME Print Reference Manual</th>
+<td><a accesskey="n" href="libgnomeprint-gnome-print.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libgnomeprint-gnome-print-paper.synopsis" class="shortcut">Top</a>
+                 | 
+                <a href="#libgnomeprint-gnome-print-paper.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="libgnomeprint-gnome-print-paper"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgnomeprint-gnome-print-paper.top_of_page"></a>gnome-print-paper</span></h2>
+<p>gnome-print-paper</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libgnomeprint-gnome-print-paper.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+                    <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper">GnomePrintPaper</a>;
+const <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper">GnomePrintPaper</a> * <a class="link" href="libgnomeprint-gnome-print-paper.html#gnome-print-paper-get-default" title="gnome_print_paper_get_default ()">gnome_print_paper_get_default</a>   (void);
+const <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper">GnomePrintPaper</a> * <a class="link" href="libgnomeprint-gnome-print-paper.html#gnome-print-paper-get-by-name" title="gnome_print_paper_get_by_name ()">gnome_print_paper_get_by_name</a>   (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *name);
+const <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper">GnomePrintPaper</a> * <a class="link" href="libgnomeprint-gnome-print-paper.html#gnome-print-paper-get-by-size" title="gnome_print_paper_get_by_size ()">gnome_print_paper_get_by_size</a>   (<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> width,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> height);
+const <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper">GnomePrintPaper</a> * <a class="link" href="libgnomeprint-gnome-print-paper.html#gnome-print-paper-get-closest-by-size" title="gnome_print_paper_get_closest_by_size ()">gnome_print_paper_get_closest_by_size</a>
+                                                        (<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> width,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> height,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> mustfit);
+<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *             <a class="link" href="libgnomeprint-gnome-print-paper.html#gnome-print-paper-get-list" title="gnome_print_paper_get_list ()">gnome_print_paper_get_list</a>          (void);
+void                <a class="link" href="libgnomeprint-gnome-print-paper.html#gnome-print-paper-free-list" title="gnome_print_paper_free_list ()">gnome_print_paper_free_list</a>         (<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *papers);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-gnome-print-paper.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-gnome-print-paper.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="GnomePrintPaper"></a><h3>GnomePrintPaper</h3>
+<pre class="programlisting">typedef struct {
+	   guint version : 8; /* Has to be 0 at moment */
+	   guchar *name;      /* Name such as A4 */
+	   gdouble width, height;
+} GnomePrintPaper;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-paper-get-default"></a><h3>gnome_print_paper_get_default ()</h3>
+<pre class="programlisting">const <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper">GnomePrintPaper</a> * gnome_print_paper_get_default   (void);</pre>
+<p>
+Get a pointer to the default paper for the system.  The returned
+pointer should not be freed.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A pointer to the default <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper"><span class="type">GnomePrintPaper</span></a>.
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-paper-get-by-name"></a><h3>gnome_print_paper_get_by_name ()</h3>
+<pre class="programlisting">const <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper">GnomePrintPaper</a> * gnome_print_paper_get_by_name   (const <a
+href="../glib/glib-Basic-Types.html#guchar"
+>guchar</a> *name);</pre>
+<p>
+Gets a pointer the paper represented by name <em class="parameter"><code>name</code></em>, for example: "A4".
+The returned pointer should not be freed.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>name</code></em> :</span></p></td>
+<td> The name of the paper to get
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A pointer to the <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper"><span class="type">GnomePrintPaper</span></a>, <a
+href="../glib/glib-Standard-Macros.html#NULL--CAPS"
+><code class="literal">NULL</code></a> if not found.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-paper-get-by-size"></a><h3>gnome_print_paper_get_by_size ()</h3>
+<pre class="programlisting">const <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper">GnomePrintPaper</a> * gnome_print_paper_get_by_size   (<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> width,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> height);</pre>
+<p>
+Gets a pointer the paper with width <em class="parameter"><code>width</code></em> and height <em class="parameter"><code>height</code></em>.
+The returned pointer should not be freed.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>width</code></em> :</span></p></td>
+<td> The width of the paper
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>height</code></em> :</span></p></td>
+<td> The height of the paper
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A pointer to the <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper"><span class="type">GnomePrintPaper</span></a>, <a
+href="../glib/glib-Standard-Macros.html#NULL--CAPS"
+><code class="literal">NULL</code></a> if not found.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-paper-get-closest-by-size"></a><h3>gnome_print_paper_get_closest_by_size ()</h3>
+<pre class="programlisting">const <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper">GnomePrintPaper</a> * gnome_print_paper_get_closest_by_size
+                                                        (<a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> width,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> height,
+                                                         <a
+href="../glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> mustfit);</pre>
+<p>
+Gets a pointer the paper with dimensions closest to width <em class="parameter"><code>width</code></em> and 
+height <em class="parameter"><code>height</code></em>.  If <em class="parameter"><code>mustfit</code></em> is <a
+href="../glib/glib-Standard-Macros.html#TRUE--CAPS"
+><code class="literal">TRUE</code></a> then <em class="parameter"><code>width</code></em> and <em class="parameter"><code>height</code></em> must fit
+within the dimensions of the returned paper.  The returned pointer 
+should not be freed.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>width</code></em> :</span></p></td>
+<td> The width of the paper
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>height</code></em> :</span></p></td>
+<td> The height of the paper
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mustfit</code></em> :</span></p></td>
+<td> Should <em class="parameter"><code>width</code></em> and <em class="parameter"><code>height</code></em> fit within paper
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A pointer to the <a class="link" href="libgnomeprint-gnome-print-paper.html#GnomePrintPaper" title="GnomePrintPaper"><span class="type">GnomePrintPaper</span></a>, <a
+href="../glib/glib-Standard-Macros.html#NULL--CAPS"
+><code class="literal">NULL</code></a> if not found.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-paper-get-list"></a><h3>gnome_print_paper_get_list ()</h3>
+<pre class="programlisting"><a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *             gnome_print_paper_get_list          (void);</pre>
+<p>
+Get a <a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+><span class="type">GList</span></a> of all the papers available on the system.  The list returned
+must be freed with <a class="link" href="libgnomeprint-gnome-print-paper.html#gnome-print-paper-free-list" title="gnome_print_paper_free_list ()"><span class="type">gnome_print_paper_free_list</span></a> when you are finished.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A pointer to the list of papers.
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-paper-free-list"></a><h3>gnome_print_paper_free_list ()</h3>
+<pre class="programlisting">void                gnome_print_paper_free_list         (<a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *papers);</pre>
+<p>
+Used to free the list created using <a class="link" href="libgnomeprint-gnome-print-paper.html#gnome-print-paper-get-list" title="gnome_print_paper_get_list ()"><span class="type">gnome_print_paper_get_list</span></a>.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>papers</code></em> :</span></p></td>
+<td> A pointer to a <a
+href="../glib/glib-Doubly-Linked-Lists.html#GList"
+><span class="type">GList</span></a> of papers to free
+</td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.11</div>
+</body>
+</html>

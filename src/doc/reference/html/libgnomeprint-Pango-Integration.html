@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Pango Integration</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.2">
+<link rel="home" href="index.html" title="GNOME Print Reference Manual">
+<link rel="up" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+<link rel="prev" href="libgnomeprint-gnome-print.html" title="gnome-print">
+<link rel="next" href="libgnomeprint-gnome-print-unit.html" title="gnome-print-unit">
+<meta name="generator" content="GTK-Doc V1.11 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="part" href="libgnomeprint.html" title="Part I. GNOME Print Overview">
+<link rel="part" href="libgnomeprintunsorted.html" title="Part II. API Reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libgnomeprint-gnome-print.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libgnomeprintunsorted.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GNOME Print Reference Manual</th>
+<td><a accesskey="n" href="libgnomeprint-gnome-print-unit.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libgnomeprint-Pango-Integration.synopsis" class="shortcut">Top</a>
+                 | 
+                <a href="#libgnomeprint-Pango-Integration.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="libgnomeprint-Pango-Integration"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgnomeprint-Pango-Integration.top_of_page"></a>Pango Integration</span></h2>
+<p>Pango Integration — Using gnome-print with Pango</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libgnomeprint-Pango-Integration.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+<a
+href="../pango/pango-Fonts.html#PangoFontMap"
+>PangoFontMap</a> *      <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-font-map-new" title="gnome_print_pango_font_map_new ()">gnome_print_pango_font_map_new</a>      (void);
+<a
+href="../pango/pango-Fonts.html#PangoFontMap"
+>PangoFontMap</a> *      <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-get-default-font-map" title="gnome_print_pango_get_default_font_map ()">gnome_print_pango_get_default_font_map</a>
+                                                        (void);
+<a
+href="../pango/pango-Text-Processing.html#PangoContext"
+>PangoContext</a> *      <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-create-context" title="gnome_print_pango_create_context ()">gnome_print_pango_create_context</a>    (<a
+href="../pango/pango-Fonts.html#PangoFontMap"
+>PangoFontMap</a> *fontmap);
+void                <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-update-context" title="gnome_print_pango_update_context ()">gnome_print_pango_update_context</a>    (<a
+href="../pango/pango-Text-Processing.html#PangoContext"
+>PangoContext</a> *context,
+                                                         <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc);
+<a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+>PangoLayout</a> *       <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-create-layout" title="gnome_print_pango_create_layout ()">gnome_print_pango_create_layout</a>     (<a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc);
+void                <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-glyph-string" title="gnome_print_pango_glyph_string ()">gnome_print_pango_glyph_string</a>      (<a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc,
+                                                         <a
+href="../pango/pango-Fonts.html#PangoFont"
+>PangoFont</a> *font,
+                                                         <a
+href="../pango/pango-Glyph-Storage.html#PangoGlyphString"
+>PangoGlyphString</a> *glyphs);
+void                <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-layout-line" title="gnome_print_pango_layout_line ()">gnome_print_pango_layout_line</a>       (<a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc,
+                                                         <a
+href="../pango/pango-Layout-Objects.html#PangoLayoutLine"
+>PangoLayoutLine</a> *line);
+void                <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-layout" title="gnome_print_pango_layout ()">gnome_print_pango_layout</a>            (<a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc,
+                                                         <a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+>PangoLayout</a> *layout);
+void                <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-layout-print" title="gnome_print_pango_layout_print ()">gnome_print_pango_layout_print</a>      (<a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc,
+                                                         <a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+>PangoLayout</a> *pl);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-Pango-Integration.description"></a><h2>Description</h2>
+<p>
+The functions in this section allow you to use gnome-print to
+draw text using the sophisticated layout and internationalization
+capabilities of the Pango library. In general, for a GNOME
+application, these are the text APIs you should be using.
+</p>
+<p>
+There are a number of different types of objects involved in
+using <span class="type">Pango</span> with gnome-print.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><a
+href="../pango/pango-Fonts.html#PangoFontMap"
+>PangoFontMap</a></span></p></td>
+<td><p>
+        A <a
+href="../pango/pango-Fonts.html#PangoFontMap"
+>PangoFontMap</a> contains
+        the information necessary to resolve abstract font names
+        to particular fonts on the system. A font map appropriate
+        for use with gnome-print is created using
+<a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-font-map-new" title="gnome_print_pango_font_map_new ()"><code class="function"><a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-font-map-new" title="gnome_print_pango_font_map_new ()"><code class="function">gnome_print_pango_font_map_new()</code></a></code></a>.
+        Normally instead of creating a new font map, you can just
+        use the global default font map returned by
+<a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-get-default-font-map" title="gnome_print_pango_get_default_font_map ()"><code class="function"><a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-get-default-font-map" title="gnome_print_pango_get_default_font_map ()"><code class="function">gnome_print_pango_get_default_font_map()</code></a></code></a>.
+        The only exception to this is if you need to use lower level
+        Pango APIs to customize how the font name to font lookup is
+        done, since modifying the global default font map isn't allowed.
+      </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a
+href="../pango/pango-Text-Processing.html#PangoContext"
+>PangoContext</a></span></p></td>
+<td>
+<p>
+        Information about doing layout for a particular output device
+        with a particular set of options is
+        encapsulated into a <a
+href="../pango/pango-Text-Processing.html#PangoContext"
+>PangoContext</a>. Contexts for
+        gnome-print are created using
+        <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-create-context" title="gnome_print_pango_create_context ()"><code class="function"><a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-create-context" title="gnome_print_pango_create_context ()"><code class="function">gnome_print_pango_create_context()</code></a></code></a>
+      </p>
+<p>
+        A Pango context created in this way is not specific to a
+        particular <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> but
+        before using a Pango context to do layout for a gnome-print
+        context, it's necessary to call
+        <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-update-context" title="gnome_print_pango_update_context ()"><code class="function"><a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-update-context" title="gnome_print_pango_update_context ()"><code class="function">gnome_print_pango_update_context()</code></a></code></a>.
+        This function also needs to be called if when the current
+        transformation matrix changes.
+      </p>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+>PangoLayout</a></span></p></td>
+<td><p>
+        A <a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+>PangoLayout</a> holds one or more paragraphs of text
+        and encapsulates all the necessary logic needed to
+        line wrap and lay out the text. Once you have a
+        <a
+href="../pango/pango-Text-Processing.html#PangoContext"
+><span class="type">PangoContext</span></a>, you can create a layout using
+        <code class="function"><GTKDOCLINK HREF="pango-layout-new"><code class="function">pango_layout_new()</code></code></GTKDOCLINK>.
+      </p></td>
+</tr>
+</tbody>
+</table></div>
+<p>
+In the normal case, a <a
+href="../pango/pango-Fonts.html#PangoFontMap"
+>PangoFontMap</a>
+created directly with <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-create-layout" title="gnome_print_pango_create_layout ()"><code class="function"><a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-create-layout" title="gnome_print_pango_create_layout ()"><code class="function">gnome_print_pango_create_layout()</code></a></code></a>
+is all that is needed. A simple example that uses Pango to draw a string centered
+in a page looks like:
+</p>
+<div class="informalexample"><pre class="programlisting">
+static void
+draw_hello_world (GnomePrintContext *gpc,
+                  double             page_width,
+                  double             page_height)
+{
+  PangoLayout *layout = gnome_print_pango_create_layout (gpc);
+  int pango_width, pango_height;
+  double width, height;
+  pango_layout_set_text (layout, "Hello World");
+  pango_layout_get_size (layout, &amp;pango_width, &amp;pango_height);
+  width = (double) pango_width / PANGO_SCALE;
+  height = (double) pango_height / PANGO_SCALE;
+  gnome_print_moveto (gpc,
+	             (page_width - width) / 2,
+                     (page_width - height)/ 2);
+  gnome_print_pango_layout (gpc, layout);
+  g_object_unref (layout);
+}
+</pre></div>
+<p>
+Note the need to convert from Pango units to the floating point
+units that gnome-print uses by dividing by
+<code class="literal">PANGO_SCALE</code>.
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="libgnomeprint-Pango-Integration.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="gnome-print-pango-font-map-new"></a><h3>gnome_print_pango_font_map_new ()</h3>
+<pre class="programlisting"><a
+href="../pango/pango-Fonts.html#PangoFontMap"
+>PangoFontMap</a> *      gnome_print_pango_font_map_new      (void);</pre>
+<p>
+Creates a new <a
+href="../pango/pango-Fonts.html#PangoFontMap"
+><span class="type">PangoFontMap</span></a> object suitable for use with
+gnome-print. In most cases, you probably want to use
+<a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-get-default-font-map" title="gnome_print_pango_get_default_font_map ()"><code class="function">gnome_print_pango_get_default_font_map()</code></a> instead.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a newly created <a
+href="../pango/pango-Fonts.html#PangoFontMap"
+><span class="type">PangoFontMap</span></a> object
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-pango-get-default-font-map"></a><h3>gnome_print_pango_get_default_font_map ()</h3>
+<pre class="programlisting"><a
+href="../pango/pango-Fonts.html#PangoFontMap"
+>PangoFontMap</a> *      gnome_print_pango_get_default_font_map
+                                                        (void);</pre>
+<p>
+Gets a singleton <a
+href="../pango/pango-Fonts.html#PangoFontMap"
+><span class="type">PangoFontMap</span></a> object suitable for
+use with gnome-print.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> the default <a
+href="../pango/pango-Fonts.html#PangoFontMap"
+><span class="type">PangoFontMap</span></a> object for gnome-print. The
+returned object is owned by gnome-print and should not be modified.
+(If you need to set custom options, create a new font map with
+<a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-font-map-new" title="gnome_print_pango_font_map_new ()"><code class="function">gnome_print_pango_font_map_new()</code></a>.)  The reference count is
+<span class="emphasis"><em>not</em></span> increased.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-pango-create-context"></a><h3>gnome_print_pango_create_context ()</h3>
+<pre class="programlisting"><a
+href="../pango/pango-Text-Processing.html#PangoContext"
+>PangoContext</a> *      gnome_print_pango_create_context    (<a
+href="../pango/pango-Fonts.html#PangoFontMap"
+>PangoFontMap</a> *fontmap);</pre>
+<p>
+Creates a new <a
+href="../pango/pango-Text-Processing.html#PangoContext"
+><span class="type">PangoContext</span></a> object for the specified fontmap.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>fontmap</code></em> :</span></p></td>
+<td> a <a
+href="../pango/pango-Fonts.html#PangoFontMap"
+><span class="type">PangoFontMap</span></a> from <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-get-default-font-map" title="gnome_print_pango_get_default_font_map ()"><code class="function">gnome_print_pango_get_default_font_map()</code></a>
+ or <code class="function">gnome_print_pango_create_font_map()</code>.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a newly created <a
+href="../pango/pango-Text-Processing.html#PangoContext"
+><span class="type">PangoContext</span></a> object
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-pango-update-context"></a><h3>gnome_print_pango_update_context ()</h3>
+<pre class="programlisting">void                gnome_print_pango_update_context    (<a
+href="../pango/pango-Text-Processing.html#PangoContext"
+>PangoContext</a> *context,
+                                                         <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc);</pre>
+<p>
+Update a context so that layout done with it reflects the
+current state of <em class="parameter"><code>gpc</code></em>. In general, every time you use a
+<a
+href="../pango/pango-Text-Processing.html#PangoContext"
+><span class="type">PangoContext</span></a> with a different <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>, or
+you change the transformation matrix of the <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>
+(other than pure translations) you should call this function.
+You also need to call <a
+href="../pango/pango-Layout-Objects.html#pango-layout-context-changed"
+><code class="function">pango_layout_context_changed()</code></a> for any
+<a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+><span class="type">PangoLayout</span></a> objects that exit for the <a
+href="../pango/pango-Text-Processing.html#PangoContext"
+><span class="type">PangoContext</span></a>.
+</p>
+<p>
+This function currently does nothing and that isn't expected
+to change for gnome-print. The main benefit of calling it
+is that your code will be properly prepared for conversion
+to use with future rendering systems such as Cairo where
+the corresponding operation will actually do something.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>context</code></em> :</span></p></td>
+<td> a <a
+href="../pango/pango-Text-Processing.html#PangoContext"
+><span class="type">PangoContext</span></a> from <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-create-context" title="gnome_print_pango_create_context ()"><code class="function">gnome_print_pango_create_context()</code></a>.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gpc</code></em> :</span></p></td>
+<td> a <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-pango-create-layout"></a><h3>gnome_print_pango_create_layout ()</h3>
+<pre class="programlisting"><a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+>PangoLayout</a> *       gnome_print_pango_create_layout     (<a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc);</pre>
+<p>
+Convenience function that creates a new <a
+href="../pango/pango-Text-Processing.html#PangoContext"
+><span class="type">PangoContext</span></a>, updates
+it for rendering to <em class="parameter"><code>gpc</code></em>, and then creates a <a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+><span class="type">PangoLayout</span></a> for
+that <a
+href="../pango/pango-Text-Processing.html#PangoContext"
+><span class="type">PangoContext</span></a>. Generally this function suffices for
+most usage of gnome-print with Pango and you don't need to
+deal with the <a
+href="../pango/pango-Text-Processing.html#PangoContext"
+><span class="type">PangoContext</span></a> directly.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gpc</code></em> :</span></p></td>
+<td> a <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> the newly created <a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+><span class="type">PangoLayout</span></a>. Free with
+ <a
+href="../libmissioncontrol-server/libmissioncontrol-server-mcd-debug.html#g-object-unref"
+><code class="function">g_object_unref()</code></a> when you are done with it.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-pango-glyph-string"></a><h3>gnome_print_pango_glyph_string ()</h3>
+<pre class="programlisting">void                gnome_print_pango_glyph_string      (<a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc,
+                                                         <a
+href="../pango/pango-Fonts.html#PangoFont"
+>PangoFont</a> *font,
+                                                         <a
+href="../pango/pango-Glyph-Storage.html#PangoGlyphString"
+>PangoGlyphString</a> *glyphs);</pre>
+<p>
+Draws the glyphs in <em class="parameter"><code>glyphs</code></em> into the specified <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>.
+Positioning information in <em class="parameter"><code>glyphs</code></em> is transformed by the current
+transformation matrix, the glyphs are drawn in the current color,
+and the glyphs are positioned so that the left edge of the baseline
+is at the current point.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gpc</code></em> :</span></p></td>
+<td> a <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>font</code></em> :</span></p></td>
+<td> the <a
+href="../pango/pango-Fonts.html#PangoFont"
+><span class="type">PangoFont</span></a> that the glyphs in <em class="parameter"><code>glyphs</code></em> are from
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>glyphs</code></em> :</span></p></td>
+<td> a <a
+href="../pango/pango-Glyph-Storage.html#PangoGlyphString"
+><span class="type">PangoGlyphString</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-pango-layout-line"></a><h3>gnome_print_pango_layout_line ()</h3>
+<pre class="programlisting">void                gnome_print_pango_layout_line       (<a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc,
+                                                         <a
+href="../pango/pango-Layout-Objects.html#PangoLayoutLine"
+>PangoLayoutLine</a> *line);</pre>
+<p>
+Draws the text in <em class="parameter"><code>line</code></em> into the specified <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>.  The
+text is drawn in the current color unless that has been overridden
+by attributes set on the layout and the glyphs are positioned so
+that the left edge of the baseline is at the current point.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gpc</code></em> :</span></p></td>
+<td> a <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>line</code></em> :</span></p></td>
+<td> a <a
+href="../pango/pango-Layout-Objects.html#PangoLayoutLine"
+><span class="type">PangoLayoutLine</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-pango-layout"></a><h3>gnome_print_pango_layout ()</h3>
+<pre class="programlisting">void                gnome_print_pango_layout            (<a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc,
+                                                         <a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+>PangoLayout</a> *layout);</pre>
+<p>
+Draws the text in <em class="parameter"><code>layout</code></em> into the specified <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>.  The
+text is drawn in the current color unless that has been overridden
+by attributes set on the layout and the glyphs are positioned so
+that the left edge of the baseline is at the current point.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gpc</code></em> :</span></p></td>
+<td> a <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>layout</code></em> :</span></p></td>
+<td> a <a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+><span class="type">PangoLayout</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="gnome-print-pango-layout-print"></a><h3>gnome_print_pango_layout_print ()</h3>
+<pre class="programlisting">void                gnome_print_pango_layout_print      (<a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext">GnomePrintContext</a> *gpc,
+                                                         <a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+>PangoLayout</a> *pl);</pre>
+<p>
+Draws the text in <em class="parameter"><code>pl</code></em> into the specified <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>.  The
+text is drawn in the current color unless that has been overridden
+by attributes set on the layout and the glyphs are positioned so
+that the left edge of the baseline is at the point (0, 0). This function
+is obsolete; use <a class="link" href="libgnomeprint-Pango-Integration.html#gnome-print-pango-layout" title="gnome_print_pango_layout ()"><code class="function">gnome_print_pango_layout()</code></a> instead.</p>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gpc</code></em> :</span></p></td>
+<td> a <a class="link" href="libgnomeprint-gnome-print.html#GnomePrintContext" title="GnomePrintContext"><span class="type">GnomePrintContext</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>pl</code></em> :</span></p></td>
+<td> the <a
+href="../pango/pango-Layout-Objects.html#PangoLayout"
+><span class="type">PangoLayout</span></a> to print
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.11</div>
+</body>
+</html>

@@ -1,0 +1,421 @@
+# Telugu translation of libgnomeprint
+# Copyright (C) 2005 Free Software Foundation, Andhra Pradesh.
+# This file is distributed under the same license as the libgnomeprint package.
+#
+# విక్రం ఫణీంద్ర<vikramphaneendra@yahoo.co.in>, 2005
+# దండు ప్రసాద్ <dandu_prasad2000@yahoo.com>, 2005
+# రమణ సాయి <rmn_sai@yahoo.com>, 2005
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libgnomeprint\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-09-06 17:06+0200\n"
+"PO-Revision-Date: 2005-02-07 12:40+0100\n"
+"Last-Translator: రమణ సాయి <rmn_sai@yahoo.com>, 2005\n"
+"Language-Team: Free Software Foundation, Andhra Pradesh <fsfap@gnu.org.in>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/globals.xml.in.h:1
+msgid "1/3 A4"
+msgstr "1/3 ఎ4"
+
+#: ../data/globals.xml.in.h:2
+msgid "1/3 A5"
+msgstr "1/3 ఎ5"
+
+#: ../data/globals.xml.in.h:3
+msgid "1/4 A3"
+msgstr "1/4 ఎ3"
+
+#: ../data/globals.xml.in.h:4
+msgid "1/4 A4"
+msgstr "1/4 ఎ4"
+
+#: ../data/globals.xml.in.h:5
+msgid "1/8 A4"
+msgstr "1/8 ఎ4"
+
+#: ../data/globals.xml.in.h:6
+msgid "2 pages to 1"
+msgstr "౨2 పుటలనుండి 1 పుటకు"
+
+#: ../data/globals.xml.in.h:7
+msgid "4 pages to 1"
+msgstr "4 పుటలనుండి 1 పుటకు"
+
+#: ../data/globals.xml.in.h:8
+msgid "A0"
+msgstr "ఎ0"
+
+#: ../data/globals.xml.in.h:9
+msgid "A1"
+msgstr "ఎ1"
+
+#: ../data/globals.xml.in.h:10
+msgid "A10"
+msgstr "ఎ10"
+
+#: ../data/globals.xml.in.h:11
+msgid "A2"
+msgstr "ఎ2"
+
+#: ../data/globals.xml.in.h:12
+msgid "A3"
+msgstr "ఎ3"
+
+#. FIXME: fill in all papers and units. (Lauris)
+#. FIXME: load papers from file (Lauris)
+#. FIXME: use some fancy unit program (Lauris)
+#.
+#. * WARNING! Do not mess up with that - we use hardcoded numbers for base units!
+#.
+#: ../data/globals.xml.in.h:13 ../libgnomeprint/gnome-print-paper.c:43
+msgid "A4"
+msgstr "ఎ4"
+
+#: ../data/globals.xml.in.h:14
+msgid "A5"
+msgstr "ఎ5"
+
+#: ../data/globals.xml.in.h:15
+msgid "A6"
+msgstr "ఎ6"
+
+#: ../data/globals.xml.in.h:16
+msgid "A7"
+msgstr "ఎ7"
+
+#: ../data/globals.xml.in.h:17
+msgid "A8"
+msgstr "ఎ8"
+
+#: ../data/globals.xml.in.h:18
+msgid "A9"
+msgstr "ఎ9"
+
+#: ../data/globals.xml.in.h:19
+msgid "B0"
+msgstr "బి0"
+
+#: ../data/globals.xml.in.h:20
+msgid "B1"
+msgstr "బి1"
+
+#: ../data/globals.xml.in.h:21
+msgid "B10"
+msgstr "బి10"
+
+#: ../data/globals.xml.in.h:22
+msgid "B2"
+msgstr "బి2"
+
+#: ../data/globals.xml.in.h:23
+msgid "B3"
+msgstr "బి3"
+
+#: ../data/globals.xml.in.h:24
+msgid "B4"
+msgstr "బి4"
+
+#: ../data/globals.xml.in.h:25
+msgid "B5"
+msgstr "బి5"
+
+#: ../data/globals.xml.in.h:26
+msgid "B6"
+msgstr "బి6"
+
+#: ../data/globals.xml.in.h:27
+msgid "B7"
+msgstr "బి7"
+
+#: ../data/globals.xml.in.h:28
+msgid "B8"
+msgstr "బి8"
+
+#: ../data/globals.xml.in.h:29
+msgid "B9"
+msgstr "బి9"
+
+#: ../data/globals.xml.in.h:30
+msgid "C0"
+msgstr "సి0"
+
+#: ../data/globals.xml.in.h:31
+msgid "C1"
+msgstr "సి1"
+
+#: ../data/globals.xml.in.h:32
+msgid "C10"
+msgstr "సి10"
+
+#: ../data/globals.xml.in.h:33
+msgid "C2"
+msgstr "సి2"
+
+#: ../data/globals.xml.in.h:34
+msgid "C3"
+msgstr "సి3"
+
+#: ../data/globals.xml.in.h:35
+msgid "C4"
+msgstr "సి4"
+
+#: ../data/globals.xml.in.h:36
+msgid "C5"
+msgstr "సి5"
+
+#: ../data/globals.xml.in.h:37
+msgid "C6"
+msgstr "సి6"
+
+#: ../data/globals.xml.in.h:38
+msgid "C6/C5 Envelope"
+msgstr "సి6/సి5 కప్పు"
+
+#: ../data/globals.xml.in.h:39
+msgid "C7"
+msgstr "సి7"
+
+#: ../data/globals.xml.in.h:40
+msgid "C8"
+msgstr "సి8"
+
+#: ../data/globals.xml.in.h:41
+msgid "C9"
+msgstr "సి9"
+
+#: ../data/globals.xml.in.h:42
+msgid "Custom"
+msgstr "మలచు"
+
+#: ../data/globals.xml.in.h:43
+msgid "DL Envelope"
+msgstr "డిఎల్ కప్పు"
+
+#: ../data/globals.xml.in.h:44
+msgid "Divided"
+msgstr "విభజించిన"
+
+#: ../data/globals.xml.in.h:45
+msgid "Envelope 6x9"
+msgstr "కప్పు 6x9"
+
+#: ../data/globals.xml.in.h:46
+msgid "Envelope No10"
+msgstr "కప్పు సంఖ్య10"
+
+#: ../data/globals.xml.in.h:47
+msgid "Folded"
+msgstr "మడచిన"
+
+#: ../data/globals.xml.in.h:48
+msgid "Landscape"
+msgstr "ప్రకృతి దృశ్యం"
+
+#: ../data/globals.xml.in.h:49
+msgid "Plain"
+msgstr "సమమైన"
+
+#: ../data/globals.xml.in.h:50
+msgid "Portrait"
+msgstr "చిత్రపటం"
+
+#: ../data/globals.xml.in.h:51
+msgid "Rotated 180 degrees"
+msgstr "180 కోణాంశాలు పరిభ్రమించబడినది"
+
+#: ../data/globals.xml.in.h:52
+msgid "Rotated 270 degrees"
+msgstr " 270 కోణాంశాలు పరిభ్రమించబడినది"
+
+#: ../data/globals.xml.in.h:53
+msgid "Rotated 90 degrees"
+msgstr " 90 కోణాంశాలు పరిభ్రమించబడినది"
+
+#: ../data/globals.xml.in.h:54
+msgid "Straight"
+msgstr "తిన్నగా"
+
+#: ../data/globals.xml.in.h:55
+msgid "US Executive"
+msgstr "యుఎస్ అమలు పరుచు"
+
+#: ../data/globals.xml.in.h:56
+msgid "US Legal"
+msgstr "యుఎస్ సాధారణ"
+
+#: ../data/globals.xml.in.h:57
+msgid "US Letter"
+msgstr "యుఎస్ లేఖ"
+
+#: ../data/globals.xml.in.h:58
+msgid "Upside down landscape"
+msgstr "ప్రకృతి దృశ్యం పైనుండి క్రిందకు"
+
+#: ../data/globals.xml.in.h:59
+msgid "Upside down portrait"
+msgstr "చిత్రపటం పైనుండి క్రిందకు"
+
+#: ../data/printers/GENERIC.xml.in.h:1
+msgid "Generic Postscript"
+msgstr "సాధారణ పోస్ట్స్ర్కిప్ట్"
+
+#: ../data/printers/PDF-WRITER.xml.in.h:1
+msgid "Create a PDF document"
+msgstr "పిడిఎఫ్ పత్రమును సృష్టించుము "
+
+#: ../libgnomeprint/gnome-font-face.c:494
+msgid "The quick brown fox jumps over the lazy dog."
+msgstr "ది క్విక్ బ్రౌన్ ఫాక్స్ జంప్స్ ఓవర్ ది లేజి డాగ్"
+
+#: ../libgnomeprint/gnome-print-job.c:144
+msgid "Job Configuration"
+msgstr "నిర్ధిష్టకార్య రూపశిల్పం"
+
+#: ../libgnomeprint/gnome-print-job.c:145
+msgid "The configuration for the print job"
+msgstr "ముద్రణ నిర్ధిష్టకార్యం యొక్క రూపశిల్పం"
+
+#: ../libgnomeprint/gnome-print-job.c:149
+msgid "Context"
+msgstr "సందర్భం"
+
+#: ../libgnomeprint/gnome-print-job.c:150
+msgid "The context for the print job"
+msgstr "ముద్రణ నిర్ధిష్టకార్యం యొక్క సందర్భం"
+
+#. Do not insert any elements before/between first 4
+#: ../libgnomeprint/gnome-print-unit.c:36
+msgid "Unit"
+msgstr "ప్రమాణం"
+
+#: ../libgnomeprint/gnome-print-unit.c:36
+msgid "Units"
+msgstr "ప్రమాణాలు"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Point"
+msgstr "స్థానం"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Pt"
+msgstr "పిటి"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Points"
+msgstr "స్థానములు"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Pts"
+msgstr "పిటిఎస్"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "Userspace unit"
+msgstr "వినియోగదారుని ప్రదేశ ప్రమాణము"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "User"
+msgstr "వినియోగదారుడు"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "Userspace units"
+msgstr "వినియోగదారుని ప్రదేశ ప్రమాణములు"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Pixel"
+msgstr "పిక్సెల్"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Px"
+msgstr "పిఎక్స్"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Pixels"
+msgstr "పిక్సెల్స్"
+
+#. You can add new elements from this point forward
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "Percent"
+msgstr "శాతం"
+
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "%"
+msgstr "%"
+
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "Percents"
+msgstr "శాతములు"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "Millimeter"
+msgstr "మిల్లి మీటరు"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "mm"
+msgstr "ఎమ్ ఎమ్"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "Millimeters"
+msgstr "మిల్లి మీటర్లు"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "Centimeter"
+msgstr "సెంటీ మీటరు"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "cm"
+msgstr "సిఎమ్"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "Centimeters"
+msgstr "సెంటీ మీటర్లు"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "Inch"
+msgstr "అంగుళము"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "in"
+msgstr "ఐఎన్"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "Inches"
+msgstr "అంగుళాలు"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:398
+msgid "on the weekend"
+msgstr "వారాంతములో"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:400
+msgid "between midnight and 8 a.m."
+msgstr "మధ్యరాత్రి నుండి 8 ఎ.ఎమ్"
+
+#. gpa_option_item_new (node,"night",_("between 6 p.m. and 6 a.m."));
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:402
+msgid "between 6 p.m. and 6 a.m."
+msgstr "6 పి.మ్. నుండి ౬6 ఎ.మ్."
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:404
+msgid "between 4 p.m. and midnight"
+msgstr "4 పి.ఎమ్. నుండి మధ్యరాత్రి"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:405
+msgid "between 6 a.m. and 6 p.m."
+msgstr "6 ఎ.మ్. నుండి ౬6 పి.మ్."
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:406
+msgid "when manually released"
+msgstr "నిర్దేశికంగా విడుదల చేసినట్లయితే"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:407
+msgid "immediately"
+msgstr "త్వరగా"
+
+#: ../libgnomeprint/modules/lpd/gnome-print-lpd.c:119
+#, c-format
+msgid "%s (via lpr)"
+msgstr "%s (ఎల్ పి ఆర్ ద్వారా)"

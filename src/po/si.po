@@ -1,0 +1,429 @@
+# translation of libgnomeprint.si.po to Sinhala
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Danishka Navin <snavin@redhat.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: libgnomeprint.si\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-05-07 03:21+0100\n"
+"PO-Revision-Date: 2007-05-16 14:40+0530\n"
+"Last-Translator: Danishka Navin <snavin@redhat.com>\n"
+"Language-Team: Sinhala <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/globals.xml.in.h:1
+msgid "1/3 A4"
+msgstr "1/3 A4"
+
+#: ../data/globals.xml.in.h:2
+msgid "1/3 A5"
+msgstr "1/3 A5"
+
+#: ../data/globals.xml.in.h:3
+msgid "1/4 A3"
+msgstr "1/4 A3"
+
+#: ../data/globals.xml.in.h:4
+msgid "1/4 A4"
+msgstr "1/4 A4"
+
+#: ../data/globals.xml.in.h:5
+msgid "1/8 A4"
+msgstr "1/8 A4"
+
+#: ../data/globals.xml.in.h:6
+msgid "2 pages to 1"
+msgstr "පිටු 2 ක් 1 ට"
+
+#: ../data/globals.xml.in.h:7
+msgid "4 pages to 1"
+msgstr "පිටු 4 ක් 1 ට"
+
+#: ../data/globals.xml.in.h:8
+msgid "A0"
+msgstr "A0"
+
+#: ../data/globals.xml.in.h:9
+msgid "A1"
+msgstr "A1"
+
+#: ../data/globals.xml.in.h:10
+msgid "A10"
+msgstr "A10"
+
+#: ../data/globals.xml.in.h:11
+msgid "A2"
+msgstr "A2"
+
+#: ../data/globals.xml.in.h:12
+msgid "A3"
+msgstr "A3"
+
+#. FIXME: fill in all papers and units. (Lauris)
+#. FIXME: load papers from file (Lauris)
+#. FIXME: use some fancy unit program (Lauris)
+#.
+#. * WARNING! Do not mess up with that - we use hardcoded numbers for base units!
+#.
+#: ../data/globals.xml.in.h:13 ../libgnomeprint/gnome-print-paper.c:43
+msgid "A4"
+msgstr "A4"
+
+#: ../data/globals.xml.in.h:14
+msgid "A5"
+msgstr "A5"
+
+#: ../data/globals.xml.in.h:15
+msgid "A6"
+msgstr "A6"
+
+#: ../data/globals.xml.in.h:16
+msgid "A7"
+msgstr "A7"
+
+#: ../data/globals.xml.in.h:17
+msgid "A8"
+msgstr "A8"
+
+#: ../data/globals.xml.in.h:18
+msgid "A9"
+msgstr "A9"
+
+#: ../data/globals.xml.in.h:19
+msgid "B0"
+msgstr "B0"
+
+#: ../data/globals.xml.in.h:20
+msgid "B1"
+msgstr "B1"
+
+#: ../data/globals.xml.in.h:21
+msgid "B10"
+msgstr "B10"
+
+#: ../data/globals.xml.in.h:22
+msgid "B2"
+msgstr "B2"
+
+#: ../data/globals.xml.in.h:23
+msgid "B3"
+msgstr "B3"
+
+#: ../data/globals.xml.in.h:24
+msgid "B4"
+msgstr "B4"
+
+#: ../data/globals.xml.in.h:25
+msgid "B5"
+msgstr "B5"
+
+#: ../data/globals.xml.in.h:26
+msgid "B6"
+msgstr "B6"
+
+#: ../data/globals.xml.in.h:27
+msgid "B7"
+msgstr "B7"
+
+#: ../data/globals.xml.in.h:28
+msgid "B8"
+msgstr "B8"
+
+#: ../data/globals.xml.in.h:29
+msgid "B9"
+msgstr "B9"
+
+#: ../data/globals.xml.in.h:30
+msgid "C0"
+msgstr "C0"
+
+#: ../data/globals.xml.in.h:31
+msgid "C1"
+msgstr "C1"
+
+#: ../data/globals.xml.in.h:32
+msgid "C10"
+msgstr "C10"
+
+#: ../data/globals.xml.in.h:33
+msgid "C2"
+msgstr "C2"
+
+#: ../data/globals.xml.in.h:34
+msgid "C3"
+msgstr "C3"
+
+#: ../data/globals.xml.in.h:35
+msgid "C4"
+msgstr "C4"
+
+#: ../data/globals.xml.in.h:36
+msgid "C5"
+msgstr "C5"
+
+#: ../data/globals.xml.in.h:37
+msgid "C6"
+msgstr "C6"
+
+#: ../data/globals.xml.in.h:38
+msgid "C6/C5 Envelope"
+msgstr "C6/C5 ලියුම් කවර"
+
+#: ../data/globals.xml.in.h:39
+msgid "C7"
+msgstr "C7"
+
+#: ../data/globals.xml.in.h:40
+msgid "C8"
+msgstr "C8"
+
+#: ../data/globals.xml.in.h:41
+msgid "C9"
+msgstr "C9"
+
+#: ../data/globals.xml.in.h:42
+msgid "Custom"
+msgstr "භාවිතය"
+
+#: ../data/globals.xml.in.h:43
+msgid "DL Envelope"
+msgstr "DL ලියුම් කවර"
+
+#: ../data/globals.xml.in.h:44
+msgid "Divided"
+msgstr "බෙදුණු"
+
+#: ../data/globals.xml.in.h:45
+msgid "Envelope 6x9"
+msgstr "ලියුම් කවර 6x9"
+
+#: ../data/globals.xml.in.h:46
+msgid "Envelope No10"
+msgstr "ලියුම් කවර No10"
+
+#: ../data/globals.xml.in.h:47
+msgid "Folded"
+msgstr "නැමුණු"
+
+#: ../data/globals.xml.in.h:48
+msgid "Landscape"
+msgstr "දිගටි හැඩය"
+
+#: ../data/globals.xml.in.h:49
+msgid "Plain"
+msgstr "සරල"
+
+#: ../data/globals.xml.in.h:50
+msgid "Portrait"
+msgstr "නිරුපණය"
+
+#: ../data/globals.xml.in.h:51
+msgid "Rotated 180 degrees"
+msgstr "අංශක 180ක් හැරුණු"
+
+#: ../data/globals.xml.in.h:52
+msgid "Rotated 270 degrees"
+msgstr "අංශක 270ක් හැරුණු"
+
+#: ../data/globals.xml.in.h:53
+msgid "Rotated 90 degrees"
+msgstr "අංශක 90ක් හැරුණු"
+
+#: ../data/globals.xml.in.h:54
+msgid "Straight"
+msgstr "සෘජු"
+
+#: ../data/globals.xml.in.h:55
+msgid "US Executive"
+msgstr "US Executive"
+
+#: ../data/globals.xml.in.h:56
+msgid "US Legal"
+msgstr "US Legal"
+
+#: ../data/globals.xml.in.h:57
+msgid "US Letter"
+msgstr "US Letter"
+
+#: ../data/globals.xml.in.h:58
+msgid "Upside down landscape"
+msgstr "උඩ යට මාරුවු දිගටි හැඩය"
+
+#: ../data/globals.xml.in.h:59
+msgid "Upside down portrait"
+msgstr "උඩ යට මාරුවු නිරුපණය"
+
+#: ../data/printers/GENERIC.xml.in.h:1
+msgid "Generic Postscript"
+msgstr "සාමාන්‍ය Postscript"
+
+#: ../data/printers/PDF-WRITER.xml.in.h:1
+msgid "Create a PDF document"
+msgstr "PDF ලේඛනයක් නිපද වන්න"
+
+#. xgettext: Notice that this sentence contains every letter
+#. * of the English alphabet. This is a special sentence, called
+#. * a 'Pangram' (see: http://en.wikipedia.org/wiki/Pangram).
+#. * This sentence is used to demonstrate in a nice way how well
+#. * a font in your language looks. It's an improvement from having
+#. * just the alphabet of a language.
+#. * Therefore, add a short sentence here in your language that
+#. * demonstrates the letters of your alphabet.
+#: ../libgnomeprint/gnome-font-face.c:502
+msgid "The quick brown fox jumps over the lazy dog."
+msgstr "ශ්‍රි ලාංකිකයකු වීම ගැන මම ආඩම්බර වෙමි, අපගේ පෞරාණික උරුමයන් සුරකිමි."
+
+#: ../libgnomeprint/gnome-print-job.c:146
+msgid "Job Configuration"
+msgstr "කාර්‍යය සුසර කිරීම"
+
+#: ../libgnomeprint/gnome-print-job.c:147
+msgid "The configuration for the print job"
+msgstr "මුද්‍රණ කාර්‍යය සඳහා සුසර කිරීම්"
+
+#: ../libgnomeprint/gnome-print-job.c:151
+msgid "Context"
+msgstr "සන්ධර්භය"
+
+#: ../libgnomeprint/gnome-print-job.c:152
+msgid "The context for the print job"
+msgstr "මුද්‍රණ කාර්‍යය සඳහා සන්ධර්භය"
+
+#. Do not insert any elements before/between first 4
+#: ../libgnomeprint/gnome-print-unit.c:36
+msgid "Unit"
+msgstr "ඒකකය"
+
+#: ../libgnomeprint/gnome-print-unit.c:36
+msgid "Units"
+msgstr "ඒකක"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Point"
+msgstr "ලකුණ"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Pt"
+msgstr "Pt"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Points"
+msgstr "ලකුණු"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Pts"
+msgstr "Pts"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "Userspace unit"
+msgstr "Userspace ඒකක"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "User"
+msgstr "පරිශිලක"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "Userspace units"
+msgstr "Userspace ඒකක"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Pixel"
+msgstr "පික්සලය"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Px"
+msgstr "Px"
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Pixels"
+msgstr "පික්සල"
+
+#. You can add new elements from this point forward
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "Percent"
+msgstr "ප්‍රතිශතය"
+
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "%"
+msgstr "%"
+
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "Percents"
+msgstr "ප්‍රතිශත"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "Millimeter"
+msgstr "මිලි මීටරය"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "mm"
+msgstr "මි.මී."
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "Millimeters"
+msgstr "මිලි මීටර්"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "Centimeter"
+msgstr "සෙන්ටි මිටරය"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "cm"
+msgstr "සෙ.මි."
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "Centimeters"
+msgstr "සෙන්ටි මිටර"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "Inch"
+msgstr "අඟල"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "in"
+msgstr "අඟල්"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "Inches"
+msgstr "අඟල්"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:398
+msgid "on the weekend"
+msgstr "සති අන්තයේ දී"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:400
+msgid "between midnight and 8 a.m."
+msgstr "මධ්‍යම රාත්‍රිය සහ පෙ.ව.8.00 අතර"
+
+#. gpa_option_item_new (node,"night",_("between 6 p.m. and 6 a.m."));
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:402
+msgid "between 6 p.m. and 6 a.m."
+msgstr "ප.ව.6.00 සහ පෙ.ව.6.00 අතර"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:404
+msgid "between 4 p.m. and midnight"
+msgstr "ප.ව.4.00 සහ මධ්‍යම රාත්‍රිය අතර"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:405
+msgid "between 6 a.m. and 6 p.m."
+msgstr "පෙ.ව.6.00 සහ ප.ව.6.00 අතර"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:406
+msgid "when manually released"
+msgstr "ස්වයංක්‍රිය නොවන නිකුත් කිරීමකදි"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:407
+msgid "immediately"
+msgstr "හැකි ඉක්මනින්"
+
+#: ../libgnomeprint/modules/lpd/gnome-print-lpd.c:119
+#, c-format
+msgid "%s (via lpr)"
+msgstr "%s (lpr හරහා)"
+

@@ -1,0 +1,605 @@
+# translation of libgnomeprint to Kinyarwanda.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the libgnomeprint package.
+# Steve Murphy <murf@e-tools.com>, 2005
+# Steve performed initial rough translation from compendium built from translations provided by the following translators:
+# Philibert Ndandali  <ndandali@yahoo.fr>, 2005.
+# Viateur MUGENZI <muvia1@yahoo.fr>, 2005.
+# Noëlla Mupole <s24211045@tuks.co.za>, 2005.
+# Carole Karema <karemacarole@hotmail.com>, 2005.
+# JEAN BAPTISTE NGENDAHAYO <ngenda_denis@yahoo.co.uk>, 2005.
+# Augustin KIBERWA  <akiberwa@yahoo.co.uk>, 2005.
+# Donatien NSENGIYUMVA <ndonatienuk@yahoo.co.uk>, 2005..
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libgnomeprint 2.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-09-06 17:06+0200\n"
+"PO-Revision-Date: 2005-03-28 19:35-0700\n"
+"Last-Translator: Steve Murphy <murf@e-tools.com>\n"
+"Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/globals.xml.in.h:1
+#, fuzzy
+msgid "1/3 A4"
+msgstr "1. 3."
+
+#: ../data/globals.xml.in.h:2
+#, fuzzy
+msgid "1/3 A5"
+msgstr "1. 3."
+
+#: ../data/globals.xml.in.h:3
+#, fuzzy
+msgid "1/4 A3"
+msgstr "1. 4."
+
+#: ../data/globals.xml.in.h:4
+#, fuzzy
+msgid "1/4 A4"
+msgstr "1. 4."
+
+#: ../data/globals.xml.in.h:5
+#, fuzzy
+msgid "1/8 A4"
+msgstr "1. 8"
+
+#: ../data/globals.xml.in.h:6
+#, fuzzy
+msgid "2 pages to 1"
+msgstr "2. Amapaji Kuri 1."
+
+#: ../data/globals.xml.in.h:7
+#, fuzzy
+msgid "4 pages to 1"
+msgstr "4. Amapaji Kuri 1."
+
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_DRAW.1.text
+#: ../data/globals.xml.in.h:8
+msgid "A0"
+msgstr "A0"
+
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_DRAW.2.text
+#: ../data/globals.xml.in.h:9
+msgid "A1"
+msgstr "A1"
+
+#: ../data/globals.xml.in.h:10
+msgid "A10"
+msgstr ""
+
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_DRAW.3.text
+#: ../data/globals.xml.in.h:11
+msgid "A2"
+msgstr "A2"
+
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_STD.1.text
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_DRAW.4.text
+#: ../data/globals.xml.in.h:12
+msgid "A3"
+msgstr "A3"
+
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_STD.2.text
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_DRAW.5.text
+#. FIXME: fill in all papers and units. (Lauris)
+#. FIXME: load papers from file (Lauris)
+#. FIXME: use some fancy unit program (Lauris)
+#.
+#. * WARNING! Do not mess up with that - we use hardcoded numbers for base units!
+#.
+#: ../data/globals.xml.in.h:13 ../libgnomeprint/gnome-print-paper.c:43
+msgid "A4"
+msgstr "A4"
+
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_STD.3.text
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_DRAW.6.text
+#: ../data/globals.xml.in.h:14
+msgid "A5"
+msgstr "A5"
+
+#: ../data/globals.xml.in.h:15
+msgid "A6"
+msgstr ""
+
+#: ../data/globals.xml.in.h:16
+msgid "A7"
+msgstr ""
+
+#: ../data/globals.xml.in.h:17
+msgid "A8"
+msgstr ""
+
+#: ../data/globals.xml.in.h:18
+msgid "A9"
+msgstr ""
+
+#: ../data/globals.xml.in.h:19
+msgid "B0"
+msgstr ""
+
+#: ../data/globals.xml.in.h:20
+msgid "B1"
+msgstr ""
+
+#: ../data/globals.xml.in.h:21
+msgid "B10"
+msgstr ""
+
+#: ../data/globals.xml.in.h:22
+msgid "B2"
+msgstr ""
+
+#: ../data/globals.xml.in.h:23
+msgid "B3"
+msgstr ""
+
+#: ../data/globals.xml.in.h:24
+msgid "B4"
+msgstr ""
+
+#: ../data/globals.xml.in.h:25
+msgid "B5"
+msgstr ""
+
+#: ../data/globals.xml.in.h:26
+msgid "B6"
+msgstr ""
+
+#: ../data/globals.xml.in.h:27
+msgid "B7"
+msgstr ""
+
+#: ../data/globals.xml.in.h:28
+msgid "B8"
+msgstr ""
+
+#: ../data/globals.xml.in.h:29
+msgid "B9"
+msgstr ""
+
+#: ../data/globals.xml.in.h:30
+msgid "C0"
+msgstr ""
+
+#: ../data/globals.xml.in.h:31
+msgid "C1"
+msgstr ""
+
+#: ../data/globals.xml.in.h:32
+msgid "C10"
+msgstr ""
+
+#: ../data/globals.xml.in.h:33
+msgid "C2"
+msgstr ""
+
+#: ../data/globals.xml.in.h:34
+msgid "C3"
+msgstr ""
+
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_STD.14.text
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_DRAW.17.text
+#: ../data/globals.xml.in.h:35
+msgid "C4"
+msgstr "C4"
+
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_STD.15.text
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_DRAW.18.text
+#: ../data/globals.xml.in.h:36
+msgid "C5"
+msgstr "C5"
+
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_STD.16.text
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_DRAW.19.text
+#: ../data/globals.xml.in.h:37
+msgid "C6"
+msgstr "C6"
+
+#: ../data/globals.xml.in.h:38
+msgid "C6/C5 Envelope"
+msgstr ""
+
+#: ../data/globals.xml.in.h:39
+msgid "C7"
+msgstr ""
+
+#: ../data/globals.xml.in.h:40
+msgid "C8"
+msgstr ""
+
+#: ../data/globals.xml.in.h:41
+msgid "C9"
+msgstr ""
+
+#: ../data/globals.xml.in.h:42
+#, fuzzy
+msgid "Custom"
+msgstr "Guhanga"
+
+#: ../data/globals.xml.in.h:43
+msgid "DL Envelope"
+msgstr ""
+
+#: ../data/globals.xml.in.h:44
+msgid "Divided"
+msgstr ""
+
+#: ../data/globals.xml.in.h:45
+msgid "Envelope 6x9"
+msgstr ""
+
+#: ../data/globals.xml.in.h:46
+msgid "Envelope No10"
+msgstr ""
+
+#: ../data/globals.xml.in.h:47
+msgid "Folded"
+msgstr ""
+
+# svx/source\items\svxitems.src:RID_SVXITEMS_PAGE_LAND_TRUE.text
+#: ../data/globals.xml.in.h:48
+msgid "Landscape"
+msgstr "Urupapuro-ntambike"
+
+# sw/source\ui\misc\insrule.src:DLG_INSERT_RULER.ST_SIMPLE.text
+#: ../data/globals.xml.in.h:49
+msgid "Plain"
+msgstr "Byuzuye"
+
+# svx/source\items\svxitems.src:RID_SVXITEMS_PAGE_LAND_FALSE.text
+#: ../data/globals.xml.in.h:50
+msgid "Portrait"
+msgstr "Urupapuro-mpagarike"
+
+#: ../data/globals.xml.in.h:51
+#, fuzzy
+msgid "Rotated 180 degrees"
+msgstr "Dogere"
+
+#: ../data/globals.xml.in.h:52
+#, fuzzy
+msgid "Rotated 270 degrees"
+msgstr "Dogere"
+
+#: ../data/globals.xml.in.h:53
+#, fuzzy
+msgid "Rotated 90 degrees"
+msgstr "Dogere"
+
+#: ../data/globals.xml.in.h:54
+msgid "Straight"
+msgstr ""
+
+#: ../data/globals.xml.in.h:55
+msgid "US Executive"
+msgstr ""
+
+#: ../data/globals.xml.in.h:56
+msgid "US Legal"
+msgstr ""
+
+#: ../data/globals.xml.in.h:57
+msgid "US Letter"
+msgstr ""
+
+#: ../data/globals.xml.in.h:58
+#, fuzzy
+msgid "Upside down landscape"
+msgstr "Hasi Urupapuro- ntambike"
+
+#: ../data/globals.xml.in.h:59
+#, fuzzy
+msgid "Upside down portrait"
+msgstr "Hasi Urupapuro- mpagarike"
+
+#: ../data/printers/GENERIC.xml.in.h:1
+msgid "Generic Postscript"
+msgstr ""
+
+#: ../data/printers/PDF-WRITER.xml.in.h:1
+#, fuzzy
+msgid "Create a PDF document"
+msgstr "a Inyandiko"
+
+#: ../libgnomeprint/gnome-font-face.c:494
+#, fuzzy
+msgid "The quick brown fox jumps over the lazy dog."
+msgstr "Igihogo KURI"
+
+#: ../libgnomeprint/gnome-print-job.c:144
+msgid "Job Configuration"
+msgstr ""
+
+#: ../libgnomeprint/gnome-print-job.c:145
+#, fuzzy
+msgid "The configuration for the print job"
+msgstr "Iboneza kugirango Gucapa"
+
+# 1134
+#: ../libgnomeprint/gnome-print-job.c:149
+msgid "Context"
+msgstr "urwego rw'imyumvire, rw'imivugirwe"
+
+#: ../libgnomeprint/gnome-print-job.c:150
+#, fuzzy
+msgid "The context for the print job"
+msgstr "Imvugiro kugirango Gucapa"
+
+#. Do not insert any elements before/between first 4
+#: ../libgnomeprint/gnome-print-unit.c:36
+#, fuzzy
+msgid "Unit"
+msgstr "Igice:"
+
+#: ../libgnomeprint/gnome-print-unit.c:36
+msgid "Units"
+msgstr ""
+
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Calc.xcs:....Layout.Other.MeasureUnit.Metric..6.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Calc.xcs:....Layout.Other.MeasureUnit.NonMetric..6.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Impress.xcs:....Layout.Other.MeasureUnit.Metric..6.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Impress.xcs:....Layout.Other.MeasureUnit.NonMetric..6.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Draw.xcs:....Layout.Other.MeasureUnit.Metric..6.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Draw.xcs:....Layout.Other.MeasureUnit.NonMetric..6.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Window.HorizontalRulerUnit..6.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Window.VerticalRulerUnit..6.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Other.MeasureUnit..6.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Window.HorizontalRulerUnit..6.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Window.VerticalRulerUnit..6.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Other.MeasureUnit..6.text
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Point"
+msgstr "Akadomo"
+
+# vcl/source\src\units.src:SV_FUNIT_STRINGS.7.text
+#: ../libgnomeprint/gnome-print-unit.c:37
+#, fuzzy
+msgid "Pt"
+msgstr "pt"
+
+# 4705
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Points"
+msgstr "utubago"
+
+#: ../libgnomeprint/gnome-print-unit.c:37
+msgid "Pts"
+msgstr ""
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+#, fuzzy
+msgid "Userspace unit"
+msgstr "Igice:"
+
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\chardlg.src:RID_SVXSTR_COLOR_USER.text
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_STD.13.text
+# #-#-#-#-#  svx.pot (Gnome 2.12)  #-#-#-#-#
+# svx/source\dialog\page.src:RID_SVXSTRARY_PAPERSIZE_DRAW.16.text
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "User"
+msgstr "Ukoresha"
+
+#: ../libgnomeprint/gnome-print-unit.c:38
+msgid "Userspace units"
+msgstr ""
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Pixel"
+msgstr ""
+
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Px"
+msgstr ""
+
+# offmgr/source\offapp\dialog\optgdlg.src:OFA_TP_VIEW.FT_POINTLIMIT_UNIT.text
+#: ../libgnomeprint/gnome-print-unit.c:39
+msgid "Pixels"
+msgstr "Pigiseli"
+
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Zoom.Type..0.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Zoom.Type..0.text
+#. You can add new elements from this point forward
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "Percent"
+msgstr "Ku ijana"
+
+# #-#-#-#-#  starmath.pot (Gnome 2.12)  #-#-#-#-#
+# starmath/source\smres.src:RID_DISTANCEDIALOG.1.text
+# #-#-#-#-#  starmath.pot (Gnome 2.12)  #-#-#-#-#
+# starmath/source\smres.src:RID_DISTANCEDIALOG.2.text
+# #-#-#-#-#  starmath.pot (Gnome 2.12)  #-#-#-#-#
+# starmath/source\smres.src:RID_DISTANCEDIALOG.3.text
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "%"
+msgstr "%"
+
+#: ../libgnomeprint/gnome-print-unit.c:41
+msgid "Percents"
+msgstr ""
+
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Calc.xcs:....Layout.Other.MeasureUnit.Metric..1.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Calc.xcs:....Layout.Other.MeasureUnit.NonMetric..1.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Impress.xcs:....Layout.Other.MeasureUnit.Metric..1.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Impress.xcs:....Layout.Other.MeasureUnit.NonMetric..1.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Draw.xcs:....Layout.Other.MeasureUnit.Metric..1.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Draw.xcs:....Layout.Other.MeasureUnit.NonMetric..1.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Window.HorizontalRulerUnit..1.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Window.VerticalRulerUnit..1.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Other.MeasureUnit..1.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Window.HorizontalRulerUnit..1.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Window.VerticalRulerUnit..1.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Other.MeasureUnit..1.text
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "Millimeter"
+msgstr "Milimetero"
+
+# vcl/source\src\units.src:SV_FUNIT_STRINGS.1.text
+#: ../libgnomeprint/gnome-print-unit.c:42
+msgid "mm"
+msgstr "mm"
+
+#: ../libgnomeprint/gnome-print-unit.c:42
+#, fuzzy
+msgid "Millimeters"
+msgstr "Milimetero"
+
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Calc.xcs:....Layout.Other.MeasureUnit.Metric..2.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Calc.xcs:....Layout.Other.MeasureUnit.NonMetric..2.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Impress.xcs:....Layout.Other.MeasureUnit.Metric..2.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Impress.xcs:....Layout.Other.MeasureUnit.NonMetric..2.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Draw.xcs:....Layout.Other.MeasureUnit.Metric..2.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Draw.xcs:....Layout.Other.MeasureUnit.NonMetric..2.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Window.HorizontalRulerUnit..2.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Window.VerticalRulerUnit..2.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Other.MeasureUnit..2.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Window.HorizontalRulerUnit..2.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Window.VerticalRulerUnit..2.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Other.MeasureUnit..2.text
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "Centimeter"
+msgstr "Santimetero"
+
+# vcl/source\src\units.src:SV_FUNIT_STRINGS.2.text
+#: ../libgnomeprint/gnome-print-unit.c:43
+msgid "cm"
+msgstr "cm"
+
+#: ../libgnomeprint/gnome-print-unit.c:43
+#, fuzzy
+msgid "Centimeters"
+msgstr "Santimetero"
+
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Calc.xcs:....Layout.Other.MeasureUnit.Metric..8.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Calc.xcs:....Layout.Other.MeasureUnit.NonMetric..8.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Impress.xcs:....Layout.Other.MeasureUnit.Metric..8.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Impress.xcs:....Layout.Other.MeasureUnit.NonMetric..8.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Draw.xcs:....Layout.Other.MeasureUnit.Metric..8.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Draw.xcs:....Layout.Other.MeasureUnit.NonMetric..8.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Window.HorizontalRulerUnit..8.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Window.VerticalRulerUnit..8.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Layout.Other.MeasureUnit..8.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Window.HorizontalRulerUnit..8.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Window.VerticalRulerUnit..8.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Layout.Other.MeasureUnit..8.text
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "Inch"
+msgstr "Inci"
+
+# vcl/source\src\units.src:SV_FUNIT_STRINGS.10.text
+#: ../libgnomeprint/gnome-print-unit.c:44
+msgid "in"
+msgstr "in"
+
+#: ../libgnomeprint/gnome-print-unit.c:44
+#, fuzzy
+msgid "Inches"
+msgstr "inci"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:398
+#, fuzzy
+msgid "on the weekend"
+msgstr "ku Impera y'icyumweru"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:400
+#, fuzzy
+msgid "between midnight and 8 a.m."
+msgstr "M."
+
+#. gpa_option_item_new (node,"night",_("between 6 p.m. and 6 a.m."));
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:402
+#, fuzzy
+msgid "between 6 p.m. and 6 a.m."
+msgstr "M. M."
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:404
+#, fuzzy
+msgid "between 4 p.m. and midnight"
+msgstr "M."
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:405
+#, fuzzy
+msgid "between 6 a.m. and 6 p.m."
+msgstr "M. M."
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:406
+#, fuzzy
+msgid "when manually released"
+msgstr "Ryari:"
+
+#: ../libgnomeprint/modules/cups/gnome-print-cups.c:407
+#, fuzzy
+msgid "immediately"
+msgstr "Ako kanya"
+
+#: ../libgnomeprint/modules/lpd/gnome-print-lpd.c:119
+#, fuzzy, c-format
+msgid "%s (via lpr)"
+msgstr "%s(Biturutse"
